@@ -4,10 +4,8 @@ using System.Text;
 
 namespace Entities
 {
-    public class Team
+    public class Team : BaseEntity
     {
-        public Guid Id { get; set; }
-
         public string Name { get; set; }
 
         public string Descripiton { get; set; }

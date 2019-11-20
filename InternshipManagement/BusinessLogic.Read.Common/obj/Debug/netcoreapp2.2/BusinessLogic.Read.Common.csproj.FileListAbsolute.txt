@@ -1,0 +1,11 @@
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\bin\Debug\netcoreapp2.2\BusinessLogic.Read.Common.deps.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\bin\Debug\netcoreapp2.2\BusinessLogic.Read.Common.dll
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\bin\Debug\netcoreapp2.2\BusinessLogic.Read.Common.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\bin\Debug\netcoreapp2.2\BusinessLogic.Read.Common.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\bin\Debug\netcoreapp2.2\BusinessLogic.Read.Common.pdb
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.dll
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Read.Common\obj\Debug\netcoreapp2.2\BusinessLogic.Read.Common.pdb

@@ -1,0 +1,14 @@
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\Models.Read.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\DataAccess.Read.deps.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\DataAccess.Read.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\DataAccess.Read.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\DataAccess.Read.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\DataAccess.Read.pdb
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\bin\Debug\netcoreapp2.2\Models.Read.pdb
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.csproj.CopyComplete
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Read\obj\Debug\netcoreapp2.2\DataAccess.Read.pdb

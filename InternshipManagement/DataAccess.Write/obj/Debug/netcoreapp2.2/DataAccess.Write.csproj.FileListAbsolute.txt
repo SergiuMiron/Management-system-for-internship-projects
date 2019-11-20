@@ -1,0 +1,11 @@
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.deps.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.pdb
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.pdb

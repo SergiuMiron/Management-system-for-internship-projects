@@ -1,0 +1,11 @@
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\bin\Debug\netcoreapp2.2\BusinessLogic.Write.deps.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\bin\Debug\netcoreapp2.2\BusinessLogic.Write.dll
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\bin\Debug\netcoreapp2.2\BusinessLogic.Write.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\bin\Debug\netcoreapp2.2\BusinessLogic.Write.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\bin\Debug\netcoreapp2.2\BusinessLogic.Write.pdb
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.dll
+C:\InternshipManagement\InternshipManagement\BusinessLogic.Write\obj\Debug\netcoreapp2.2\BusinessLogic.Write.pdb

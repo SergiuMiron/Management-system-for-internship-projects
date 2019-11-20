@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Entities
 {
-    public class Feedback
+    public class Feedback : BaseEntity
     {
-        public Guid Id { get; set; }
-
         public string Description { get; set; }
 
         public string IdIntern { get; set; }
 
         public string IdMentor { get; set; }
+
+        public int Rating { get; set; }
     }
 }

@@ -4,14 +4,151 @@
     "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj": {}
   },
   "projects": {
-    "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj": {
+    "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\BusinessLogic.Write.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj",
-        "projectName": "Services.Write",
-        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj",
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\BusinessLogic.Write.csproj",
+        "projectName": "BusinessLogic.Write",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\BusinessLogic.Write.csproj",
         "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
-        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\obj\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casofiei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\DataAccess.Write.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\DataAccess.Write.csproj"
+              },
+              "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj"
+              },
+              "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj"
+              },
+              "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\Models.Write.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\Models.Write.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\DataAccess.Write.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\DataAccess.Write.csproj",
+        "projectName": "DataAccess.Write",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\DataAccess.Write.csproj",
+        "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\DataAccess.Write\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casofiei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +178,190 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj",
+        "projectName": "Models.Read",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj",
+        "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casofiei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\Models.Write.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\Models.Write.csproj",
+        "projectName": "Models.Write",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\Models.Write.csproj",
+        "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Write\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casofiei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.50.5, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj",
+        "projectName": "Services.Write",
+        "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\Services.Write.csproj",
+        "packagesPath": "C:\\Users\\casofiei\\.nuget\\packages\\",
+        "outputPath": "C:\\InternshipManagement\\InternshipManagement\\Services.Write\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casofiei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\BusinessLogic.Write.csproj": {
+                "projectPath": "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Write\\BusinessLogic.Write.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -57,6 +378,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             }
           },
           "imports": [

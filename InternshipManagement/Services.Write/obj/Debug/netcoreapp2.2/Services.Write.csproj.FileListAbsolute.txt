@@ -1,0 +1,14 @@
+C:\InternshipManagement\InternshipManagement\Services.Write\bin\Debug\netcoreapp2.2\Services.Write.deps.json
+C:\InternshipManagement\InternshipManagement\Services.Write\bin\Debug\netcoreapp2.2\Services.Write.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\Services.Write\bin\Debug\netcoreapp2.2\Services.Write.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\Services.Write\bin\Debug\netcoreapp2.2\Services.Write.dll
+C:\InternshipManagement\InternshipManagement\Services.Write\bin\Debug\netcoreapp2.2\Services.Write.pdb
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.RazorAssemblyInfo.cache
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.RazorAssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.RazorTargetAssemblyInfo.cache
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.dll
+C:\InternshipManagement\InternshipManagement\Services.Write\obj\Debug\netcoreapp2.2\Services.Write.pdb
