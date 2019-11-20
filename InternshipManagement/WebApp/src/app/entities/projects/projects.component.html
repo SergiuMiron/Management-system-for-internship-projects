@@ -1,1 +1,26 @@
-<p>projects works!</p>
+<div class="form-container">
+  <form (submit)="save()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter project name" [(ngModel)]="project.name">
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Start Date</label>
+      <input type="date" class="form-control" id="startDate" name="startDate" placeholder="Start date of the project" [(ngModel)]="project.startDate">
+    </div>
+
+    <div class="form-group">
+      <label for="endDate">End date of the project</label>
+      <input type="date" class="form-control" id="endDate" name="endDate" placeholder="End date of the project" [(ngModel)]="project.endDate">
+    </div>
+
+    <div class="form-group">
+      <label for="technologyStack">Technology Stack</label>
+      <input type="text" class="form-control" id="technologyStack" name="technologyStack" placeholder="Technologies that will be used on the project" [(ngModel)]="project.technologyStack">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>
