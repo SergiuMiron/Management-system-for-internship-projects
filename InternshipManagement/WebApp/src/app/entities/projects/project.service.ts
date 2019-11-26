@@ -6,16 +6,17 @@ import {ProjectModel} from './project.model';
 @Injectable()
 export class ProjectService {
 
-  private resourceUrl = 'api/projects';
+  private getResourceUrl = 'https://localhost:44319/api/projects';
+  private postResourceUrl = 'http://localhost:57465/api/projects';
 
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<ProjectModel[]> {
-    return this.http.get<ProjectModel[]>(this.resourceUrl);
+    return this.http.get<ProjectModel[]>(this.getResourceUrl);
   }
 
   create(project: ProjectModel): Observable<ProjectModel> {
-    return this.http.post<ProjectModel>(this.resourceUrl, project);
+    return this.http.post<ProjectModel>(this.postResourceUrl, project);
   }
 
 }
