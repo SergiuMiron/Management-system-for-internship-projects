@@ -4731,10 +4731,41 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "BusinessLogic.Read/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "BusinessLogic.Read.Common": "1.0.0",
+          "Dapper": "1.50.5",
+          "DataAccess.Read": "1.0.0",
+          "Microsoft.AspNetCore.App": "2.2.0",
+          "Models.Read": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.Read.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.Read.dll": {}
+        }
+      },
+      "BusinessLogic.Read.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Microsoft.AspNetCore.App": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLogic.Read.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.Read.Common.dll": {}
+        }
+      },
       "BusinessLogic.Write/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
+          "BusinessLogic.Read": "1.0.0",
           "Dapper": "1.50.5",
           "DataAccess.Write": "1.0.0",
           "Entities": "1.0.0",
@@ -4747,6 +4778,21 @@
         },
         "runtime": {
           "bin/placeholder/BusinessLogic.Write.dll": {}
+        }
+      },
+      "DataAccess.Read/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Dapper": "1.50.5",
+          "Microsoft.AspNetCore.App": "2.2.0",
+          "Models.Read": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.Read.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.Read.dll": {}
         }
       },
       "DataAccess.Write/1.0.0": {
@@ -13039,10 +13085,25 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "BusinessLogic.Read/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic.Read/BusinessLogic.Read.csproj",
+      "msbuildProject": "../BusinessLogic.Read/BusinessLogic.Read.csproj"
+    },
+    "BusinessLogic.Read.Common/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic.Read.Common/BusinessLogic.Read.Common.csproj",
+      "msbuildProject": "../BusinessLogic.Read.Common/BusinessLogic.Read.Common.csproj"
+    },
     "BusinessLogic.Write/1.0.0": {
       "type": "project",
       "path": "../BusinessLogic.Write/BusinessLogic.Write.csproj",
       "msbuildProject": "../BusinessLogic.Write/BusinessLogic.Write.csproj"
+    },
+    "DataAccess.Read/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess.Read/DataAccess.Read.csproj",
+      "msbuildProject": "../DataAccess.Read/DataAccess.Read.csproj"
     },
     "DataAccess.Write/1.0.0": {
       "type": "project",

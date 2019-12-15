@@ -20,6 +20,10 @@ namespace BusinessLogic.Read.Configurations
 
             services.AddScoped<IInternQueryBuilder, InternQueryBuilder>();
             services.AddScoped<IInternLogic, InternLogic>();
+
+            services.AddScoped<IUserQueryBuilder, UserQueryBuilder>();
+            services.AddScoped<IUserLogic, UserLogic>();
+
         }
     }
 }

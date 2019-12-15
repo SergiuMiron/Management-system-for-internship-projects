@@ -6,8 +6,8 @@ import {ProjectModel} from './project.model';
 @Injectable()
 export class ProjectService {
 
-  private getResourceUrl = 'https://localhost:44319/api/projects';
-  private postResourceUrl = 'http://localhost:57465/api/projects';
+  private getResourceUrl = 'https://localhost:44390/api/projects';
+  private postResourceUrl = 'https://localhost:44307/api/projects';
 
   constructor(private http: HttpClient) {}
 

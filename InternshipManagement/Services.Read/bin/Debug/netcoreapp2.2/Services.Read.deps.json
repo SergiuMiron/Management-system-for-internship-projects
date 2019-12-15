@@ -25,11 +25,11 @@
       "Services.Read/1.0.0": {
         "dependencies": {
           "BusinessLogic.Read": "1.0.0",
-          "Entities": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.4",
+          "Models.Read": "1.0.0"
         },
         "runtime": {
           "Services.Read.dll": {}
@@ -569,18 +569,6 @@
         },
         "compile": {
           "DataAccess.Read.dll": {}
-        }
-      },
-      "Entities/1.0.0": {
-        "dependencies": {
-          "Dapper": "1.50.5",
-          "Microsoft.AspNetCore.App": "2.2.0"
-        },
-        "runtime": {
-          "Entities.dll": {}
-        },
-        "compile": {
-          "Entities.dll": {}
         }
       },
       "Models.Read/1.0.0": {
@@ -3809,11 +3797,6 @@
       "sha512": ""
     },
     "DataAccess.Read/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Entities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

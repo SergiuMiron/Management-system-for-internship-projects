@@ -13,25 +13,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - BusinessLogic", "04 - 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Services", "05 - Services", "{A80002E2-B7CB-41BD-BD4B-869239EBB461}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{FF630ABC-05B1-430D-AA01-24FBC3170F36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{FF630ABC-05B1-430D-AA01-24FBC3170F36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Read", "Models.Read\Models.Read.csproj", "{168A5A88-1186-4D85-84BB-0DEDCC800915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models.Read", "Models.Read\Models.Read.csproj", "{168A5A88-1186-4D85-84BB-0DEDCC800915}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models.Write", "Models.Write\Models.Write.csproj", "{D3ABA797-D239-428D-844D-AF2AE63E82B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models.Write", "Models.Write\Models.Write.csproj", "{D3ABA797-D239-428D-844D-AF2AE63E82B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Read", "DataAccess.Read\DataAccess.Read.csproj", "{903CB6F4-710D-458F-A3EE-9A317C50BA1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Read", "DataAccess.Read\DataAccess.Read.csproj", "{903CB6F4-710D-458F-A3EE-9A317C50BA1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Write", "DataAccess.Write\DataAccess.Write.csproj", "{09A1C3CB-4485-4FAA-9D2B-5E91F038AAC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess.Write", "DataAccess.Write\DataAccess.Write.csproj", "{09A1C3CB-4485-4FAA-9D2B-5E91F038AAC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Read", "BusinessLogic.Read\BusinessLogic.Read.csproj", "{24C79422-1690-47FB-9294-872375F45DCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Read", "BusinessLogic.Read\BusinessLogic.Read.csproj", "{24C79422-1690-47FB-9294-872375F45DCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Write", "BusinessLogic.Write\BusinessLogic.Write.csproj", "{107E5BDF-A1D2-431F-A571-8EE153CC1F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Write", "BusinessLogic.Write\BusinessLogic.Write.csproj", "{107E5BDF-A1D2-431F-A571-8EE153CC1F0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic.Read.Common", "BusinessLogic.Read.Common\BusinessLogic.Read.Common.csproj", "{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogic.Read.Common", "BusinessLogic.Read.Common\BusinessLogic.Read.Common.csproj", "{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Read", "Services.Read\Services.Read.csproj", "{E2BA3A14-B905-409F-A863-368F41B5535B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Read", "Services.Read\Services.Read.csproj", "{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Write", "Services.Write\Services.Write.csproj", "{5FBA0284-718E-4563-B4FF-209BFFF30AC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Write", "Services.Write\Services.Write.csproj", "{330EBCB3-B34A-49F4-B4E4-3D7A503740F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,14 +71,14 @@ Global
 		{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2BA3A14-B905-409F-A863-368F41B5535B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2BA3A14-B905-409F-A863-368F41B5535B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2BA3A14-B905-409F-A863-368F41B5535B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2BA3A14-B905-409F-A863-368F41B5535B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5FBA0284-718E-4563-B4FF-209BFFF30AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5FBA0284-718E-4563-B4FF-209BFFF30AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5FBA0284-718E-4563-B4FF-209BFFF30AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5FBA0284-718E-4563-B4FF-209BFFF30AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330EBCB3-B34A-49F4-B4E4-3D7A503740F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330EBCB3-B34A-49F4-B4E4-3D7A503740F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330EBCB3-B34A-49F4-B4E4-3D7A503740F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330EBCB3-B34A-49F4-B4E4-3D7A503740F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,8 +92,8 @@ Global
 		{24C79422-1690-47FB-9294-872375F45DCA} = {D4DB11C7-4405-44AE-A8E9-7F5875763F58}
 		{107E5BDF-A1D2-431F-A571-8EE153CC1F0D} = {D4DB11C7-4405-44AE-A8E9-7F5875763F58}
 		{99DF4CD7-6D3B-4A0C-84A2-CFED7C3A5CFE} = {D4DB11C7-4405-44AE-A8E9-7F5875763F58}
-		{E2BA3A14-B905-409F-A863-368F41B5535B} = {A80002E2-B7CB-41BD-BD4B-869239EBB461}
-		{5FBA0284-718E-4563-B4FF-209BFFF30AC5} = {A80002E2-B7CB-41BD-BD4B-869239EBB461}
+		{5AFE120D-DDA2-40F5-961E-46E7F8E36BFE} = {A80002E2-B7CB-41BD-BD4B-869239EBB461}
+		{330EBCB3-B34A-49F4-B4E4-3D7A503740F6} = {A80002E2-B7CB-41BD-BD4B-869239EBB461}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDBF400E-6926-446F-9FB1-438021D946EC}

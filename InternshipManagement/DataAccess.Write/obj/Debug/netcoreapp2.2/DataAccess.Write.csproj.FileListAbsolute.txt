@@ -9,3 +9,6 @@ C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcorea
 C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\DataAccess.Write.pdb
 C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.dll
 C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.pdb
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\Entities.dll
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\InternshipManagement\InternshipManagement\DataAccess.Write\obj\Debug\netcoreapp2.2\DataAccess.Write.csproj.CopyComplete

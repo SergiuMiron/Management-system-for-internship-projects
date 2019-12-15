@@ -4776,20 +4776,6 @@
           "bin/placeholder/DataAccess.Read.dll": {}
         }
       },
-      "Entities/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "Dapper": "1.50.5",
-          "Microsoft.AspNetCore.App": "2.2.0"
-        },
-        "compile": {
-          "bin/placeholder/Entities.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entities.dll": {}
-        }
-      },
       "Models.Read/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -13052,11 +13038,6 @@
       "path": "../DataAccess.Read/DataAccess.Read.csproj",
       "msbuildProject": "../DataAccess.Read/DataAccess.Read.csproj"
     },
-    "Entities/1.0.0": {
-      "type": "project",
-      "path": "../Entities/Entities.csproj",
-      "msbuildProject": "../Entities/Entities.csproj"
-    },
     "Models.Read/1.0.0": {
       "type": "project",
       "path": "../Models.Read/Models.Read.csproj",
@@ -13066,11 +13047,11 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "BusinessLogic.Read >= 1.0.0",
-      "Entities >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.4",
+      "Models.Read >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13106,8 +13087,8 @@
             "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Read\\BusinessLogic.Read.csproj": {
               "projectPath": "C:\\InternshipManagement\\InternshipManagement\\BusinessLogic.Read\\BusinessLogic.Read.csproj"
             },
-            "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Entities\\Entities.csproj"
+            "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj": {
+              "projectPath": "C:\\InternshipManagement\\InternshipManagement\\Models.Read\\Models.Read.csproj"
             }
           }
         }
