@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AuthenticationService } from './authentication.service';
+import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +20,7 @@ export class LoginComponent implements OnInit {
 
     constructor(
         private formBuilder: FormBuilder,
+        private dialogRef: MatDialogRef<LoginComponent>, @Inject(MAT_DIALOG_DATA) data,
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService) {}
@@ -33,7 +35,7 @@ export class LoginComponent implements OnInit {
           this.authenticationService.logout();
 
           // get return url from route parameters or default to '/'
-          this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+          this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/';
       }
 
       // convenience getter for easy access to form fields
@@ -52,9 +54,8 @@ export class LoginComponent implements OnInit {
               .pipe(first())
               .subscribe(
                   data => {
-                      //this.router.navigate([this.returnUrl]);
+                      // this.router.navigate([this.returnUrl]);
                       this.router.navigate(['/projects']);
-
                   },
                   error => {
                       this.error = error;
@@ -64,6 +65,10 @@ export class LoginComponent implements OnInit {
 
       onClick() {
           this.router.navigate(['/register']);
+      }
+
+      close() {
+          this.dialogRef.close();
       }
 
 }

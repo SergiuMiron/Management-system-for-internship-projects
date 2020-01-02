@@ -6,7 +6,7 @@ import { LoginComponent } from './entities/login/login/login.component';
 
 const appRoutes: Routes = [
   {
-    path: '', redirectTo: '/login', pathMatch: 'full'
+    path: '', redirectTo: '/projects', pathMatch: 'full'
   },
   {
     path: 'projects', component: ProjectsComponent

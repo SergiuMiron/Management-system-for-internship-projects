@@ -14,7 +14,8 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-          <li><a routerLink="/login">Login</a></li>
+          <li><a (click)="openLoginDialog()">Login</a></li>
+<!--          <button mat-raised-button (click)="openLoginDialog()">Login</button>-->
         <!-- <li class="dropdown">
           <a href="/login" class="dropdown-toggle" role="button">Authenticate <span class="caret"></span></a>
           <ul class="dropdown-menu">
