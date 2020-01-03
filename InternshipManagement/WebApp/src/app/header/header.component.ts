@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   constructor(public authenticationService: AuthenticationService) { }
 
   ngOnInit() {
+    console.log('onInit: ', this.authenticationService.authenticated)
   }
 
   openLoginDialog() {

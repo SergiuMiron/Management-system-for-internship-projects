@@ -5,7 +5,7 @@ import {BehaviorSubject} from 'rxjs';
 
 @Injectable({providedIn: 'root'})
 export class AuthenticationService {
-  authenticated: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  authenticated: BehaviorSubject<boolean> = new BehaviorSubject(!!localStorage.getItem('currentUser'));
 
   constructor(private http: HttpClient) {
   }

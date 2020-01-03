@@ -1,20 +1,26 @@
-<nav class="navbar navbar-default" *ngIf="(authenticationService.authenticated | async) === true">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="(authenticationService.authenticated | async) === true">
   <div class="container-fluid">
     <div class="navbar-header">
       <a routerLink="/teams" class="navbar-brand">Internship Management</a>
     </div>
 
-    <div class="navbar-default">
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a routerLink="/teams">Teams</a></li>
-        <li routerLinkActive="active"><a routerLink="/projects">Projects</a></li>
-        <li><a routerLink="/schedule">Schedule</a></li>
-        <li><a routerLink="/events">Events</a></li>
-        <li><a routerLink="/feedback">Feedback</a></li>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/teams">Teams</a></li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/projects">Projects</a></li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/schedule">Schedule</a></li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/events">Events</a></li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="/feedback">Feedback</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="/login" (click)="clearUsername()">Logout</a></li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login" (click)="clearUsername()">Logout</a></li>
 
         <!-- <li class="dropdown">
           <a href="/login" class="dropdown-toggle" role="button">Authenticate <span class="caret"></span></a>
