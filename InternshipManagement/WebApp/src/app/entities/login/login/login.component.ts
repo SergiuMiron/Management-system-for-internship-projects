@@ -1,9 +1,8 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AuthenticationService } from './authentication.service';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +10,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  loginForm: FormGroup;
+    loginForm: FormGroup;
     loading = false;
     submitted = false;
     returnUrl: string;
@@ -20,55 +18,50 @@ export class LoginComponent implements OnInit {
 
     constructor(
         private formBuilder: FormBuilder,
-        private dialogRef: MatDialogRef<LoginComponent>, @Inject(MAT_DIALOG_DATA) data,
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService) {}
 
-        ngOnInit() {
-          this.loginForm = this.formBuilder.group({
-              username: ['', Validators.required],
-              password: ['', Validators.required]
-          });
+    ngOnInit() {
+        this.loginForm = this.formBuilder.group({
+            username: ['', Validators.required],
+            password: ['', Validators.required]
+        });
 
-          // reset login status
-          this.authenticationService.logout();
+        // reset login status
+        this.authenticationService.logout();
 
-          // get return url from route parameters or default to '/'
-          this.returnUrl = this.route.snapshot.queryParams.returnUrl || '/';
-      }
+        // get return url from route parameters or default to '/'
+        this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/projects';
+    }
 
-      // convenience getter for easy access to form fields
-      get f() { return this.loginForm.controls; }
+    // convenience getter for easy access to form fields
+    get f() { return this.loginForm.controls; }
 
-      onSubmit() {
-          this.submitted = true;
+    onSubmit() {
+        this.submitted = true;
 
-          // stop here if form is invalid
-          if (this.loginForm.invalid) {
-              return;
-          }
+        // stop here if form is invalid
+        if (this.loginForm.invalid) {
+            return;
+        }
 
-          this.loading = true;
-          this.authenticationService.login(this.f.username.value, this.f.password.value)
-              .pipe(first())
-              .subscribe(
-                  data => {
-                      // this.router.navigate([this.returnUrl]);
-                      this.router.navigate(['/projects']);
-                  },
-                  error => {
-                      this.error = error;
-                      this.loading = false;
-                  });
-      }
+        this.loading = true;
+        this.authenticationService.login(this.f.username.value, this.f.password.value)
+            .pipe(first())
+            .subscribe(
+                data => {
+                    this.router.navigate([this.returnUrl]);
+                    this.authenticationService.authenticate();
 
-      onClick() {
-          this.router.navigate(['/register']);
-      }
+                },
+                error => {
+                    this.error = error;
+                    this.loading = false;
+                });
+    }
 
-      close() {
-          this.dialogRef.close();
-      }
-
+    onClick() {
+        this.router.navigate(['/register']);
+    }
 }

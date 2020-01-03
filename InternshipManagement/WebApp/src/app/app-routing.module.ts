@@ -3,16 +3,17 @@ import {RouterModule, Routes} from '@angular/router';
 import {ProjectsComponent} from './entities/projects/projects.component';
 import {TeamsComponent} from './entities/teams/teams.component';
 import { LoginComponent } from './entities/login/login/login.component';
+import { AuthGuard } from './guards';
 
 const appRoutes: Routes = [
   {
-    path: '', redirectTo: '/projects', pathMatch: 'full'
+    path: '', redirectTo: '/login', pathMatch: 'full'
   },
   {
-    path: 'projects', component: ProjectsComponent
+    path: 'projects', component: ProjectsComponent, canActivate: [AuthGuard]
   },
   {
-    path: 'teams', component: TeamsComponent
+    path: 'teams', component: TeamsComponent, canActivate: [AuthGuard]
   },
   {
     path: 'login', component: LoginComponent
