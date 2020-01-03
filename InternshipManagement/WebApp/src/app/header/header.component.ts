@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnChanges, OnInit} from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
-import { LoginComponent } from '../entities/login/login/login.component';
+import {AuthenticationService} from '../entities/login/login/authentication.service';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +10,9 @@ import { LoginComponent } from '../entities/login/login/login.component';
 export class HeaderComponent implements OnInit {
 
   // currentUser: string = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).username : null;
-  isLogged: boolean = localStorage.getItem('currentUser') ? true : false;
+  // isLogged: boolean = localStorage.getItem('currentUser') ? true : false;
 
-  constructor() { }
+  constructor(public authenticationService: AuthenticationService) { }
 
   ngOnInit() {
   }
@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
   }
 
   clearUsername() {
-    this.isLogged = false;
+    this.authenticationService.deauthenticate();
   }
 
 }
