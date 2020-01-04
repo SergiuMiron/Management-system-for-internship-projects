@@ -1,0 +1,35 @@
+<div class="form-container">
+  <h2 mat-dialog-title>Add new project</h2>
+
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+      <input matInput formControlName="name" id="name" name="name"
+             placeholder="Enter project name" [(ngModel)]="project.name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="startDate" [matDatepicker]="startDate" id="startDate" name="startDate"
+             placeholder="Start date of the project" [(ngModel)]="project.startDate">
+      <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="endDate" [matDatepicker]="endDate" id="endDate" name="endDate"
+             placeholder="End date of the project" [(ngModel)]="project.endDate">
+      <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+      <mat-datepicker #endDate></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="technologyStack" id="technologyStack"
+             name="technologyStack" placeholder="Technologies that will be used on the project"
+             [(ngModel)]="project.technologyStack">
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Close</button>
+    <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="save()">Save</button>
+  </mat-dialog-actions>
+</div>

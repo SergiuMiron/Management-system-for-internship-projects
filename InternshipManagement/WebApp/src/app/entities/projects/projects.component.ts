@@ -1,18 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {ProjectModel} from './project.model';
 import {ProjectService} from './project.service';
+import {MatDialog, MatDialogConfig, MatDialogRef, MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {NewProjectComponent} from './project-new/new-project.component';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
 
   project: ProjectModel = new ProjectModel();
-  arrayOfProjects: ProjectModel[] = [];
+  dataSource: MatTableDataSource<ProjectModel>;
+  displayedColumns: string[] = ['name', 'startDate', 'endDate', 'technologyStack'];
+  // addNewProjectDialog: MatDialogRef<NewProjectComponent>;
 
-  constructor(private projectService: ProjectService) { }
+  @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+
+  constructor(private projectService: ProjectService,
+              private dialog: MatDialog) { }
 
   ngOnInit() {
     this.initProjects();
@@ -20,15 +28,30 @@ export class ProjectsComponent implements OnInit {
 
   initProjects() {
     this.projectService.getAll().subscribe(res => {
-      console.log('all projects: ', res);
-      this.arrayOfProjects = res;
+      this.dataSource = new MatTableDataSource(res);
+      this.dataSource.paginator = this.paginator;
+      this.dataSource.sort = this.sort;
     });
   }
 
-  save() {
-    console.log('saved', this.project);
-    this.projectService.create(this.project).subscribe(res => {
-      console.log(res);
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
+  }
+
+  openAddProjectDialog() {
+    let dialogConfig = new MatDialogConfig();
+
+    dialogConfig = {
+      width: '25%',
+      disableClose: true
+    };
+    const dialogRef = this.dialog.open(NewProjectComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(() => {
       this.initProjects();
     });
   }
