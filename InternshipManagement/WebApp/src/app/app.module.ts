@@ -14,7 +14,16 @@ import {ProjectService} from './entities/projects/project.service';
 import { AuthenticationService } from './entities/login/login/authentication.service';
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {
+  MatButtonModule, MatDatepickerModule,
+  MatDialogModule,
+  MatFormFieldModule, MatIconModule,
+  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSnackBarModule,
+  MatSortModule,
+  MatTableModule
+} from '@angular/material';
+import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
+import {SharedModule} from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,19 +31,31 @@ import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} fr
     HeaderComponent,
     TeamsComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    NewProjectComponent
+  ],
+  entryComponents: [
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSnackBarModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
