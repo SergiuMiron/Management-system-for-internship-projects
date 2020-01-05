@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ToastrModule } from 'ng6-toastr-notifications';
+import { MatDialogRef } from '@angular/material';
 
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 
@@ -15,6 +17,8 @@ import { AuthenticationService } from './entities/login/login/authentication.ser
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import { AddManagerComponent } from './entities/add-manager/add-manager.component';
+import { AddManagerService } from './entities/add-manager/add-manager.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,8 @@ import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} fr
     HeaderComponent,
     TeamsComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    AddManagerComponent
   ],
   imports: [
     BrowserModule,
@@ -34,13 +39,15 @@ import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} fr
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     ProjectService,
-    AuthenticationService
+    AuthenticationService,
+    AddManagerService
 ],
   bootstrap: [AppComponent]
 })
