@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccess.Write.Configurations.Entities
 {
-    public class MentorConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Mentor>
+    public class TrainerConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Trainer>
     {
-        public void Configure(EntityTypeBuilder<Mentor> builder)
+        public void Configure(EntityTypeBuilder<Trainer> builder)
         {
             base.Configure(builder);
 
@@ -17,6 +17,8 @@ namespace DataAccess.Write.Configurations.Entities
             builder.Property(p => p.Cnp).IsRequired();
 
             builder.Property(p => p.Age).IsRequired();
+
+            builder.Property(p => p.TechnicalLevel).IsRequired();
 
             builder.Property(p => p.Department).IsRequired();
 

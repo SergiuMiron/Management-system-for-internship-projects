@@ -8,5 +8,9 @@ namespace BusinessLogic.Write.Abstractions
     public interface IUserLogic
     {
         void CreateManagerAccount(ManagerDto manager);
+
+        void CreateTrainerAccount(TrainerDto trainer);
+
+        void CreateInternAccount(InternDto intern);
     }
 }

@@ -6,7 +6,7 @@ import { AddManagerModel } from './add-manager.model';
 @Injectable()
 export class AddManagerService {
 
-  private postResourceUrl = 'https://localhost:44307/api/users';
+  private postResourceUrl = 'https://localhost:44307/api/users/create-manager';
 
   constructor(private http: HttpClient) { }
 

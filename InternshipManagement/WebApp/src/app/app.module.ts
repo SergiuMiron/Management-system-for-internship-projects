@@ -26,8 +26,14 @@ import {
 } from '@angular/material';
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
+
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
+import { AddInternComponent } from './entities/add-intern/add-intern.component';
+import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
+
 import { AddManagerService } from './entities/add-manager/add-manager.service';
+import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
+import { AddInternService } from './entities/add-intern/add-intern.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,9 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
     ProjectsComponent,
     LoginComponent,
     NewProjectComponent,
-    AddManagerComponent
+    AddManagerComponent,
+    AddInternComponent,
+    AddTrainerComponent
   ],
   entryComponents: [
     NewProjectComponent
@@ -68,7 +76,9 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     ProjectService,
     AuthenticationService,
-    AddManagerService
+    AddManagerService,
+    AddTrainerService,
+    AddInternService
 ],
   bootstrap: [AppComponent]
 })

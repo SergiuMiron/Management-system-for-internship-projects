@@ -1,0 +1,50 @@
+<div class="add-trainer-form">
+  <div class="form-container col-sm-8">
+
+    <h1 mat-dialog-title>Add Trainer</h1>
+
+    <mat-dialog-content [formGroup]="form">
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="name" id="name" name="name" placeholder="Name"
+          [(ngModel)]="newTrainer.name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="cnp" id="cnp" name="cnp" placeholder="CNP"
+          [(ngModel)]="newTrainer.cnp">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="number" formControlName="age" id="age" name="age" placeholder="Age"
+          [(ngModel)]="newTrainer.age">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="department" id="department" name="department" placeholder="Department"
+          [(ngModel)]="newTrainer.department">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="technicalLevel" id="technicalLevel" name="technicalLevel" placeholder="Technical level"
+          [(ngModel)]="newTrainer.technicalLevel">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="username" id="username" name="username" placeholder="Username"
+          [(ngModel)]="newTrainer.username">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="text" formControlName="password" id="password" name="password" placeholder="Password"
+          [(ngModel)]="newTrainer.password">
+      </mat-form-field>
+
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+      <button mat-raised-button color="primary" (click)="save()">Add Manager</button>
+      <button mat-raised-button (click)="close()">Cancel</button>
+    </mat-dialog-actions>
+  </div>
+</div>

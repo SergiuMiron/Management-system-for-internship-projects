@@ -1,7 +1,11 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { AuthenticationService } from '../entities/login/login/authentication.service';
+
 import { AddManagerComponent } from '../entities/add-manager/add-manager.component';
+import { AddInternComponent } from '../entities/add-intern/add-intern.component';
+import { AddTrainerComponent } from '../entities/add-trainer/add-trainer.component';
+
 
 @Component({
   selector: 'app-header',
@@ -28,6 +32,20 @@ export class HeaderComponent implements OnInit {
     dialogConfig.autoFocus = true;
 
     this.dialog.open(AddManagerComponent, dialogConfig);
+  }
+
+  openAddTrainerDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(AddTrainerComponent, dialogConfig);
+  }
+
+  openAddInternDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(AddInternComponent, dialogConfig);
   }
 
 }

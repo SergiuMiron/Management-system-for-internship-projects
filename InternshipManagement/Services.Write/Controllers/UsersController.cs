@@ -21,10 +21,26 @@ namespace Services.Write.Controllers
         }
 
         //create manager account
-        [HttpPost]
-        public IActionResult Create([FromBody] ManagerDto managerDto)
+        [HttpPost("create-manager")]
+        public IActionResult CreateManagerAccount([FromBody] ManagerDto managerDto)
         {
             _userLogic.CreateManagerAccount(managerDto);
+            return NoContent();
+        }
+
+        //create trainer account
+        [HttpPost("create-trainer")]
+        public IActionResult CreateTrainerAccount([FromBody] TrainerDto trainerDto)
+        {
+            _userLogic.CreateTrainerAccount(trainerDto);
+            return NoContent();
+        }
+
+        //create intern account
+        [HttpPost("create-intern")]
+        public IActionResult CreateInternAccount([FromBody] InternDto internDto)
+        {
+            _userLogic.CreateInternAccount(internDto);
             return NoContent();
         }
     }

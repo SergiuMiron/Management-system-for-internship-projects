@@ -16,6 +16,7 @@ namespace BusinessLogic.Write.Implementations
         {
             _repository = repository;
         }
+
         public void CreateManagerAccount(ManagerDto manager)
         { 
 
@@ -31,6 +32,41 @@ namespace BusinessLogic.Write.Implementations
             };
 
             _repository.Insert(newManager);
+            _repository.Save();
+        }
+
+        public void CreateTrainerAccount(TrainerDto trainer)
+        {
+            var newTrainer = new Trainer
+            {
+                Id = Guid.NewGuid(),
+                Name = trainer.Name,
+                Cnp = trainer.Cnp,
+                Age = trainer.Age,
+                Department = trainer.Department,
+                TechnicalLevel = trainer.TechnicalLevel,
+                Username = trainer.Username,
+                Password = trainer.Password
+            };
+
+            _repository.Insert(newTrainer);
+            _repository.Save();
+        }
+
+        public void CreateInternAccount(InternDto intern)
+        {
+            var newIntern = new Intern
+            {
+                Id = Guid.NewGuid(),
+                Name = intern.Name,
+                Cnp = intern.Cnp,
+                Age = intern.Age,
+                Department = intern.Department,
+                Username = intern.Username,
+                Password = intern.Password
+            };
+
+            _repository.Insert(newIntern);
             _repository.Save();
         }
     }

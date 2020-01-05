@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities
+namespace Models.Write
 {
-    public class Intern : BaseEntity
+    public class InternDto
     {
         public string Name { get; set; }
 
@@ -17,11 +17,5 @@ namespace Entities
         public string Username { get; set; }
 
         public string Password { get; set; }
-
-        public float Rating { get; set; }
-
-        public string IdTeam { get; set; }
-
-        public string IdProject { get; set; }
     }
 }
