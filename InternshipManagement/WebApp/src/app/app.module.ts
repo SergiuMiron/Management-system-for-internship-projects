@@ -60,8 +60,8 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSnackBarModule
-    ToastrModule.forRoot(),
+    MatSnackBarModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
