@@ -1,0 +1,11 @@
+C:\InternshipManagement\InternshipManagement\Models.Read\bin\Debug\netcoreapp2.2\Models.Read.deps.json
+C:\InternshipManagement\InternshipManagement\Models.Read\bin\Debug\netcoreapp2.2\Models.Read.runtimeconfig.json
+C:\InternshipManagement\InternshipManagement\Models.Read\bin\Debug\netcoreapp2.2\Models.Read.runtimeconfig.dev.json
+C:\InternshipManagement\InternshipManagement\Models.Read\bin\Debug\netcoreapp2.2\Models.Read.dll
+C:\InternshipManagement\InternshipManagement\Models.Read\bin\Debug\netcoreapp2.2\Models.Read.pdb
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.csprojAssemblyReference.cache
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.csproj.CoreCompileInputs.cache
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.AssemblyInfoInputs.cache
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.AssemblyInfo.cs
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.dll
+C:\InternshipManagement\InternshipManagement\Models.Read\obj\Debug\netcoreapp2.2\Models.Read.pdb

@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccess.Write.Configurations.Entities
 {
-    public class MentorConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Mentor>
+    public class TrainerConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Trainer>
     {
-        public void Configure(EntityTypeBuilder<Mentor> builder)
+        public void Configure(EntityTypeBuilder<Trainer> builder)
         {
             base.Configure(builder);
 

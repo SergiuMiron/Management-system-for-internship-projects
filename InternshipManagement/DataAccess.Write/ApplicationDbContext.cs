@@ -15,7 +15,7 @@ namespace DataAccess.Write
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<Intern> Interns { get; set; }
         public DbSet<Manager> Manager { get; set; }
-        public DbSet<Mentor> Mentors { get; set; }
+        public DbSet<Trainer> Mentors { get; set; }
         public DbSet<Team> Teams { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace DataAccess.Write
             modelBuilder.ApplyConfiguration(new FeedbackConfiguration());
             modelBuilder.ApplyConfiguration(new InternConfiguration());
             modelBuilder.ApplyConfiguration(new ManagerConfiguration());
-            modelBuilder.ApplyConfiguration(new MentorConfiguration());
+            modelBuilder.ApplyConfiguration(new TrainerConfiguration());
             modelBuilder.ApplyConfiguration(new ProjectConfiguration());
             modelBuilder.ApplyConfiguration(new TeamConfiguration());
         }

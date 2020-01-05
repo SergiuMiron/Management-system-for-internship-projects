@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities
+namespace Models.Read
 {
-    public class Mentor : BaseEntity
+    public class TrainerDto : BaseModel
     {
         public string Name { get; set; }
 
