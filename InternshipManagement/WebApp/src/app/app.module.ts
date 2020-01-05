@@ -16,7 +16,16 @@ import {ProjectService} from './entities/projects/project.service';
 import { AuthenticationService } from './entities/login/login/authentication.service';
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatDialogModule, MatFormFieldModule, MatInputModule} from '@angular/material';
+import {
+  MatButtonModule, MatDatepickerModule,
+  MatDialogModule,
+  MatFormFieldModule, MatIconModule,
+  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSnackBarModule,
+  MatSortModule,
+  MatTableModule
+} from '@angular/material';
+import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
+import {SharedModule} from './shared/shared.module';
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddManagerService } from './entities/add-manager/add-manager.service';
 
@@ -27,12 +36,17 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
     TeamsComponent,
     ProjectsComponent,
     LoginComponent,
+    NewProjectComponent,
     AddManagerComponent
+  ],
+  entryComponents: [
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    SharedModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
@@ -40,6 +54,13 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatIconModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSnackBarModule
     ToastrModule.forRoot(),
   ],
   providers: [
