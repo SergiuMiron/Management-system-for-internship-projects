@@ -31,5 +31,38 @@ namespace BusinessLogic.Write.Implementations
             _repository.Insert(newProject);
             _repository.Save();
         }
+
+        public void Update(ProjectDto project)
+        {
+            Guid Id = new Guid(project.Id);
+            Project projectToUpdate = _repository.GetByFilter<Project>(p => p.Id == Id);
+
+            if(projectToUpdate == null)
+            {
+                return;
+            }
+
+            if(project.Name != null) { projectToUpdate.Name = project.Name; }
+            if (project.StartDate != null) { projectToUpdate.StartDate = project.StartDate; }
+            if (project.EndDate != null) { projectToUpdate.EndDate = project.EndDate; }
+            if (project.TechnologyStack != null) { projectToUpdate.TechnologyStack = project.TechnologyStack; }
+
+            _repository.Update(projectToUpdate);
+            _repository.Save();
+        }
+
+        public void Delete(string id)
+        {
+            Guid Id = new Guid(id);
+            Project productToDelete = _repository.GetByFilter<Project>(p => p.Id == Id);
+
+            if (productToDelete == null)
+            {
+                return;
+            }
+
+            _repository.Delete(productToDelete);
+            _repository.Save();
+        }
     }
 }

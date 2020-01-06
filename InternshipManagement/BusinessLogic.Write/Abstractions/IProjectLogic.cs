@@ -8,5 +8,9 @@ namespace BusinessLogic.Write.Abstractions
     public interface IProjectLogic
     {
         void Create(ProjectDto project);
+
+        void Update(ProjectDto project);
+
+        void Delete(string id);
     }
 }

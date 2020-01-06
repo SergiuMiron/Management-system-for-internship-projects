@@ -27,5 +27,20 @@ namespace Services.Write.Controllers
             _projectLogic.Create(projectDto);
             return NoContent();
         }
+
+        //edit project
+        [HttpPut("update-project")]
+        public IActionResult Update([FromBody] ProjectDto projectDto)
+        {
+            _projectLogic.Update(projectDto);
+            return NoContent();
+        }
+
+        //delete project
+        public IActionResult Delete(string projectId)
+        {
+            _projectLogic.Delete(projectId);
+            return NoContent();
+        }
     }
 }
