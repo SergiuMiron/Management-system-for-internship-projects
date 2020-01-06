@@ -1,7 +1,7 @@
 export class ProjectModel {
 
   constructor(
-    public id?: number,
+    public id?: string,
     public name?: string,
     public startDate?: Date,
     public endDate?: Date,

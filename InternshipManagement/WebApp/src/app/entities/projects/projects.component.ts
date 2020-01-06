@@ -1,7 +1,15 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {ProjectModel} from './project.model';
 import {ProjectService} from './project.service';
-import {MatDialog, MatDialogConfig, MatDialogRef, MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import {
+  MatDialog,
+  MatDialogConfig,
+  MatDialogRef,
+  MatPaginator,
+  MatSnackBar,
+  MatSort,
+  MatTableDataSource
+} from '@angular/material';
 import {NewProjectComponent} from './project-new/new-project.component';
 
 @Component({
@@ -13,14 +21,15 @@ export class ProjectsComponent implements OnInit {
 
   project: ProjectModel = new ProjectModel();
   dataSource: MatTableDataSource<ProjectModel>;
-  displayedColumns: string[] = ['name', 'startDate', 'endDate', 'technologyStack'];
+  displayedColumns: string[] = ['name', 'startDate', 'endDate', 'technologyStack', 'action'];
   // addNewProjectDialog: MatDialogRef<NewProjectComponent>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;
 
   constructor(private projectService: ProjectService,
-              private dialog: MatDialog) { }
+              private dialog: MatDialog,
+              private snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.initProjects();
@@ -42,16 +51,25 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-  openAddProjectDialog() {
+  openProjectDialog(project?: ProjectModel) {
     let dialogConfig = new MatDialogConfig();
 
     dialogConfig = {
-      width: '25%',
-      disableClose: true
+      width: '40%',
+      disableClose: true,
+      data: project
     };
     const dialogRef = this.dialog.open(NewProjectComponent, dialogConfig);
 
     dialogRef.afterClosed().subscribe(() => {
+      this.initProjects();
+    });
+  }
+
+  deleteProject(project: ProjectModel) {
+    this.projectService.delete(project.id).subscribe(res => {
+      console.log('response from delete: ', res);
+      this.snackBar.open('Project successfully deleted', 'Dismiss', {duration: 3000});
       this.initProjects();
     });
   }

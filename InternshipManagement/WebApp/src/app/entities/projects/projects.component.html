@@ -1,5 +1,5 @@
 <div class="table-container">
-  <button mat-raised-button color="accent" class="add-project-button" (click)="openAddProjectDialog()">
+  <button mat-raised-button color="accent" class="add-project-button" (click)="openProjectDialog()">
     <mat-icon> add </mat-icon>
     Add Project
   </button>
@@ -29,6 +29,17 @@
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Technology Stack</th>
       <td mat-cell *matCellDef="let row"> {{row.technologyStack}} </td>
     </ng-container>
+
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element" class="action-link">
+        <div class="icons-container">
+          <mat-icon (click)="openProjectDialog(element)">edit</mat-icon>
+          <mat-icon (click)="deleteProject(element)">restore_from_trash</mat-icon>
+        </div>
+      </td>
+    </ng-container>
+
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;">

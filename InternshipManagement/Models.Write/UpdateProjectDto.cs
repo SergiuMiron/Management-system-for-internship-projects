@@ -4,8 +4,10 @@ using System.Text;
 
 namespace Models.Write
 {
-    public class ProjectDto
+    public class UpdateProjectDto
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public DateTime StartDate { get; set; }

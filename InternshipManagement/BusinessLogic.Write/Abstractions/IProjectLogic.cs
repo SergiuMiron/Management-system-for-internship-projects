@@ -9,7 +9,7 @@ namespace BusinessLogic.Write.Abstractions
     {
         void Create(ProjectDto project);
 
-        void Update(ProjectDto project);
+        void Update(UpdateProjectDto project);
 
         void Delete(string id);
     }

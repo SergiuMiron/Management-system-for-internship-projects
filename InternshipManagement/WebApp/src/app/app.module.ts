@@ -15,15 +15,17 @@ import { AuthenticationService } from './entities/login/login/authentication.ser
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
+  MAT_DIALOG_DATA,
   MatButtonModule, MatDatepickerModule,
-  MatDialogModule,
+  MatDialogModule, MatDialogRef,
   MatFormFieldModule, MatIconModule,
-  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSnackBarModule,
+  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSelectModule, MatSnackBarModule,
   MatSortModule,
   MatTableModule
 } from '@angular/material';
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
+import {TrainerService} from "./entities/projects/trainer.service";
 
 @NgModule({
   declarations: [
@@ -55,12 +57,16 @@ import {SharedModule} from './shared/shared.module';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSelectModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    { provide: MAT_DIALOG_DATA, useValue: {} },
+    { provide: MatDialogRef, useValue: {} },
     ProjectService,
+    TrainerService,
     AuthenticationService
 ],
   bootstrap: [AppComponent]
