@@ -46,7 +46,9 @@ namespace BusinessLogic.Write.Implementations
                 Department = trainer.Department,
                 TechnicalLevel = trainer.TechnicalLevel,
                 Username = trainer.Username,
-                Password = trainer.Password
+                Password = trainer.Password,
+                IdProject = "0",
+                IdTeam = "0"
             };
 
             _repository.Insert(newTrainer);

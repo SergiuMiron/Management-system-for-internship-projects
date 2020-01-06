@@ -40,7 +40,6 @@ export class NewProjectComponent implements OnInit {
   }
 
   save() {
-    console.log('saved', this.project);
     if (!this.project.id) {
       this.projectService.create(this.project).subscribe(() => {
           this.dialogRef.close();
@@ -48,7 +47,6 @@ export class NewProjectComponent implements OnInit {
         }, () => { this.dialogRef.close(); });
     } else {
       this.trainerService.updateTrainersProject(this.trainers, this.project.id).subscribe(res => {
-        console.log('res: ', res);
       });
 
       this.projectService.update(this.project).subscribe(() => {

@@ -23,6 +23,10 @@ namespace BusinessLogic.Write.Implementations
             {
                 Guid Id = new Guid(trainer.Id);
                 Trainer trainerToUpdate = _repository.GetByFilter<Trainer>(p => p.Id == Id);
+                if (trainerToUpdate == null)
+                {
+                    return;
+                }
                 trainerToUpdate.IdProject = projectId;
 
                 _repository.Update(trainerToUpdate);

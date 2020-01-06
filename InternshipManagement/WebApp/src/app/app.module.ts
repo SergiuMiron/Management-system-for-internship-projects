@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { ToastrModule } from 'ng6-toastr-notifications';
-import { MatDialogRef } from '@angular/material';
-
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 
 import { AppComponent } from './app.component';
@@ -27,7 +25,7 @@ import {
 } from '@angular/material';
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
-import {TrainerService} from "./entities/projects/trainer.service";
+import {TrainerService} from './entities/projects/trainer.service';
 
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddInternComponent } from './entities/add-intern/add-intern.component';

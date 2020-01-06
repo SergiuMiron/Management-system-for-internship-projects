@@ -6,6 +6,8 @@ namespace Models.Write
 {
     public class TrainerDto
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public string Cnp { get; set; }

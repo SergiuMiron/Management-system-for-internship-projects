@@ -20,9 +20,10 @@ namespace Services.Write.Controllers
             _trainerLogic = trainerLogic;
         }
 
-        public IActionResult UpdateTrainersProject([FromRoute] string projectId, [FromBody] List<TrainerDto> trainers)
+        [HttpPut("update-trainers/{id}")]
+        public IActionResult UpdateTrainersProject([FromRoute] string id, [FromBody] List<TrainerDto> trainers)
         {
-            _trainerLogic.UpdateTrainersProject(projectId, trainers);
+            _trainerLogic.UpdateTrainersProject(id, trainers);
             return NoContent();
         }
     }
