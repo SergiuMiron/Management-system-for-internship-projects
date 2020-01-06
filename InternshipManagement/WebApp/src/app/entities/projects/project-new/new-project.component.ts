@@ -47,6 +47,10 @@ export class NewProjectComponent implements OnInit {
           this.snackBar.open('The project was successfully created', 'Dismiss', {duration: 3000});
         }, () => { this.dialogRef.close(); });
     } else {
+      this.trainerService.updateTrainersProject(this.trainers, this.project.id).subscribe(res => {
+        console.log('res: ', res);
+      });
+
       this.projectService.update(this.project).subscribe(() => {
         this.dialogRef.close();
         this.snackBar.open('The project was successfully updated', 'Dismiss', {duration: 3000});

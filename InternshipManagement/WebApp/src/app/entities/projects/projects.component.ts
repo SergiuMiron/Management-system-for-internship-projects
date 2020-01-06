@@ -68,7 +68,6 @@ export class ProjectsComponent implements OnInit {
 
   deleteProject(project: ProjectModel) {
     this.projectService.delete(project.id).subscribe(res => {
-      console.log('response from delete: ', res);
       this.snackBar.open('Project successfully deleted', 'Dismiss', {duration: 3000});
       this.initProjects();
     });
