@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-	<Nullable>enable</Nullable>
-	<LangVersion>8.0</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

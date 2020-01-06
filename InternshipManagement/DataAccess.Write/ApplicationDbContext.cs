@@ -17,6 +17,7 @@ namespace DataAccess.Write
         public DbSet<Manager> Manager { get; set; }
         public DbSet<Trainer> Trainer { get; set; }
         public DbSet<Team> Team { get; set; }
+        public DbSet<Project> Project { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -24,6 +24,6 @@ namespace Models.Read
 
         public string IdProject { get; set; }
 
-        public string IdSdm { get; set; }
+        //public string IdSdm { get; set; }
     }
 }

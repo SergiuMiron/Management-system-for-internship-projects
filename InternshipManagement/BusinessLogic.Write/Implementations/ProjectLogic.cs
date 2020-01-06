@@ -32,7 +32,7 @@ namespace BusinessLogic.Write.Implementations
             _repository.Save();
         }
 
-        public void Update(ProjectDto project)
+        public void Update(UpdateProjectDto project)
         {
             Guid Id = new Guid(project.Id);
             Project projectToUpdate = _repository.GetByFilter<Project>(p => p.Id == Id);

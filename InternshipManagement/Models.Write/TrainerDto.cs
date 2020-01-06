@@ -6,6 +6,8 @@ namespace Models.Write
 {
     public class TrainerDto
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public string Cnp { get; set; }
@@ -20,8 +22,8 @@ namespace Models.Write
 
         public string TechnicalLevel { get; set; }
 
-        //public string IdTeam { get; set; }
+        public string IdTeam { get; set; }
 
-        //public string IdProject { get; set; }
+        public string IdProject { get; set; }
     }
 }

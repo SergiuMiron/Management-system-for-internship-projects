@@ -15,6 +15,7 @@ namespace BusinessLogic.Write.Configurations
             services.AddDataAccess(connectionString);
             services.AddScoped<IProjectLogic, ProjectLogic>();
             services.AddScoped<IUserLogic, UserLogic>();
+            services.AddScoped<ITrainerLogic, TrainerLogic>();
         }
     }
 }

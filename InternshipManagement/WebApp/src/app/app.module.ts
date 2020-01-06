@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { ToastrModule } from 'ng6-toastr-notifications';
-import { MatDialogRef } from '@angular/material';
-
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 
 import { AppComponent } from './app.component';
@@ -17,15 +15,17 @@ import { AuthenticationService } from './entities/login/login/authentication.ser
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
+  MAT_DIALOG_DATA,
   MatButtonModule, MatDatepickerModule,
-  MatDialogModule,
+  MatDialogModule, MatDialogRef,
   MatFormFieldModule, MatIconModule,
-  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSnackBarModule,
+  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSelectModule, MatSnackBarModule,
   MatSortModule,
   MatTableModule
 } from '@angular/material';
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
+import {TrainerService} from './entities/projects/trainer.service';
 
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddInternComponent } from './entities/add-intern/add-intern.component';
@@ -69,16 +69,21 @@ import { AddInternService } from './entities/add-intern/add-intern.service';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSnackBarModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatSelectModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    { provide: MAT_DIALOG_DATA, useValue: {} },
+    { provide: MatDialogRef, useValue: {} },
     ProjectService,
     AuthenticationService,
     AddManagerService,
     AddTrainerService,
-    AddInternService
+    AddInternService,
+    TrainerService,
+    AuthenticationService
 ],
   bootstrap: [AppComponent]
 })

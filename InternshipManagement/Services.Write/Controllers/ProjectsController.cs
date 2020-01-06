@@ -30,16 +30,17 @@ namespace Services.Write.Controllers
 
         //edit project
         [HttpPut("update-project")]
-        public IActionResult Update([FromBody] ProjectDto projectDto)
+        public IActionResult Update([FromBody] UpdateProjectDto projectDto)
         {
             _projectLogic.Update(projectDto);
             return NoContent();
         }
 
         //delete project
-        public IActionResult Delete(string projectId)
+        [HttpDelete("delete-project/{id}")]
+        public IActionResult Delete([FromRoute] string id)
         {
-            _projectLogic.Delete(projectId);
+            _projectLogic.Delete(id);
             return NoContent();
         }
     }
