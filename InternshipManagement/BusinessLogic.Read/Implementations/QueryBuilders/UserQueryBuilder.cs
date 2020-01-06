@@ -13,7 +13,7 @@ namespace BusinessLogic.Read.Implementations.QueryBuilders
         {
             var queryBuilder = new SelectQueryBuilder();
 
-            queryBuilder.SelectFromTable("Sdm");
+            queryBuilder.SelectFromTable("Manager");
             queryBuilder.BuildQuery();
 
             return queryBuilder.BuildQuery();
@@ -23,7 +23,7 @@ namespace BusinessLogic.Read.Implementations.QueryBuilders
         {
             var queryBuilder = new SelectQueryBuilder();
 
-            queryBuilder.SelectFromTable("Sdm");
+            queryBuilder.SelectFromTable("Manager");
             queryBuilder.AddWhere("Username", Comparison.Equals, username);
             queryBuilder.AddWhere("Password", Comparison.Equals, password);
             queryBuilder.BuildQuery();

@@ -18,12 +18,12 @@ namespace Entities
 
         public string Password { get; set; }
 
-        public string TehnicalLevel { get; set; }
+        public string TechnicalLevel { get; set; }
 
         public string IdTeam { get; set; }
 
         public string IdProject { get; set; }
 
-        public string IdSdm { get; set; }
+        //public string IdSdm { get; set; }
     }
 }

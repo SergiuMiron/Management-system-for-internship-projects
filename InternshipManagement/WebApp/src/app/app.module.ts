@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ToastrModule } from 'ng6-toastr-notifications';
+import { MatDialogRef } from '@angular/material';
 
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 
@@ -25,6 +27,14 @@ import {
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
 
+import { AddManagerComponent } from './entities/add-manager/add-manager.component';
+import { AddInternComponent } from './entities/add-intern/add-intern.component';
+import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
+
+import { AddManagerService } from './entities/add-manager/add-manager.service';
+import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
+import { AddInternService } from './entities/add-intern/add-intern.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +42,10 @@ import {SharedModule} from './shared/shared.module';
     TeamsComponent,
     ProjectsComponent,
     LoginComponent,
-    NewProjectComponent
+    NewProjectComponent,
+    AddManagerComponent,
+    AddInternComponent,
+    AddTrainerComponent
   ],
   entryComponents: [
     NewProjectComponent
@@ -55,13 +68,17 @@ import {SharedModule} from './shared/shared.module';
     MatIconModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
     ProjectService,
-    AuthenticationService
+    AuthenticationService,
+    AddManagerService,
+    AddTrainerService,
+    AddInternService
 ],
   bootstrap: [AppComponent]
 })
