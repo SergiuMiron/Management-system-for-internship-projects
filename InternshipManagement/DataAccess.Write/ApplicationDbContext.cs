@@ -11,12 +11,12 @@ namespace DataAccess.Write
         {
         }
 
-        public DbSet<Event> Events { get; set; }
-        public DbSet<Feedback> Feedbacks { get; set; }
-        public DbSet<Intern> Interns { get; set; }
+        public DbSet<Event> Event { get; set; }
+        public DbSet<Feedback> Feedback { get; set; }
+        public DbSet<Intern> Intern { get; set; }
         public DbSet<Manager> Manager { get; set; }
-        public DbSet<Trainer> Mentors { get; set; }
-        public DbSet<Team> Teams { get; set; }
+        public DbSet<Trainer> Trainer { get; set; }
+        public DbSet<Team> Team { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

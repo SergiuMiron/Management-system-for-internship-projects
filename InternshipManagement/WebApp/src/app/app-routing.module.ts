@@ -3,6 +3,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {ProjectsComponent} from './entities/projects/projects.component';
 import {TeamsComponent} from './entities/teams/teams.component';
 import { LoginComponent } from './entities/login/login/login.component';
+import { AddManagerComponent } from './entities/add-manager/add-manager.component';
+import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
+import { AddInternComponent } from './entities/add-intern/add-intern.component';
+
 import { AuthGuard } from './guards';
 
 const appRoutes: Routes = [
@@ -17,6 +21,15 @@ const appRoutes: Routes = [
   },
   {
     path: 'login', component: LoginComponent
+  },
+  {
+    path: 'add-manager', component: AddManagerComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'add-trainer', component: AddTrainerComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'add-intern', component: AddInternComponent, canActivate: [AuthGuard]
   },
 ];
 

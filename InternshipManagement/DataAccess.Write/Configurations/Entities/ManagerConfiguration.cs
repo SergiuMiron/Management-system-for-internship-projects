@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace DataAccess.Write.Configurations.Entities
 {
-    public class ManagerConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Trainer>
+    public class ManagerConfiguration : BaseEntityConfiguration, IEntityTypeConfiguration<Manager>
     {
-        public void Configure(EntityTypeBuilder<Trainer> builder)
+        public void Configure(EntityTypeBuilder<Manager> builder)
         {
             base.Configure(builder);
 

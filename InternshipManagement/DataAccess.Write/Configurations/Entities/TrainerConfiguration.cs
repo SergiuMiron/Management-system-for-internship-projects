@@ -18,6 +18,8 @@ namespace DataAccess.Write.Configurations.Entities
 
             builder.Property(p => p.Age).IsRequired();
 
+            builder.Property(p => p.TechnicalLevel).IsRequired();
+
             builder.Property(p => p.Department).IsRequired();
 
             builder.Property(p => p.Password).IsRequired().HasMaxLength(20);

@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="(authenticationService.authenticated | async) === true">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+  *ngIf="(authenticationService.authenticated | async) === true">
   <div class="container-fluid">
     <div class="navbar-header">
       <a routerLink="/teams" class="navbar-brand">Internship Management</a>
@@ -20,15 +21,13 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-item">
+          <a class="nav-link" (click)="openAddSdmDialog()">Add SDM</a></li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="openAddTrainerDialog()">Add trainer</a></li>
+          <li class="nav-item">
+              <a class="nav-link" (click)="openAddInternDialog()">Add intern</a></li>
+        <li class="nav-item">
           <a class="nav-link" routerLink="/login" (click)="clearUsername()">Logout</a></li>
-
-        <!-- <li class="dropdown">
-          <a href="/login" class="dropdown-toggle" role="button">Authenticate <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign up</a></li>
-          </ul>
-        </li> -->
       </ul>
     </div>
   </div>

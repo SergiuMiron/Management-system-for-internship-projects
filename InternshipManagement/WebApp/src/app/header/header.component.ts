@@ -1,6 +1,11 @@
-import {Component, OnChanges, OnInit} from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
-import {AuthenticationService} from '../entities/login/login/authentication.service';
+import { AuthenticationService } from '../entities/login/login/authentication.service';
+
+import { AddManagerComponent } from '../entities/add-manager/add-manager.component';
+import { AddInternComponent } from '../entities/add-intern/add-intern.component';
+import { AddTrainerComponent } from '../entities/add-trainer/add-trainer.component';
+
 
 @Component({
   selector: 'app-header',
@@ -12,20 +17,35 @@ export class HeaderComponent implements OnInit {
   // currentUser: string = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).username : null;
   // isLogged: boolean = localStorage.getItem('currentUser') ? true : false;
 
-  constructor(public authenticationService: AuthenticationService) { }
+  constructor(public authenticationService: AuthenticationService, public dialog: MatDialog) { }
 
   ngOnInit() {
     console.log('onInit: ', this.authenticationService.authenticated)
   }
 
-  openLoginDialog() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-  }
-
   clearUsername() {
     this.authenticationService.deauthenticate();
+  }
+
+  openAddSdmDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(AddManagerComponent, dialogConfig);
+  }
+
+  openAddTrainerDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(AddTrainerComponent, dialogConfig);
+  }
+
+  openAddInternDialog() {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.autoFocus = true;
+
+    this.dialog.open(AddInternComponent, dialogConfig);
   }
 
 }

@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { ToastrModule } from 'ng6-toastr-notifications';
+import { MatDialogRef } from '@angular/material';
 
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 
@@ -27,6 +29,14 @@ import {NewProjectComponent} from './entities/projects/project-new/new-project.c
 import {SharedModule} from './shared/shared.module';
 import {TrainerService} from "./entities/projects/trainer.service";
 
+import { AddManagerComponent } from './entities/add-manager/add-manager.component';
+import { AddInternComponent } from './entities/add-intern/add-intern.component';
+import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
+
+import { AddManagerService } from './entities/add-manager/add-manager.service';
+import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
+import { AddInternService } from './entities/add-intern/add-intern.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +44,10 @@ import {TrainerService} from "./entities/projects/trainer.service";
     TeamsComponent,
     ProjectsComponent,
     LoginComponent,
-    NewProjectComponent
+    NewProjectComponent,
+    AddManagerComponent,
+    AddInternComponent,
+    AddTrainerComponent
   ],
   entryComponents: [
     NewProjectComponent
@@ -58,6 +71,7 @@ import {TrainerService} from "./entities/projects/trainer.service";
     MatDatepickerModule,
     MatNativeDateModule,
     MatSnackBarModule,
+    ToastrModule.forRoot(),
     MatSelectModule
   ],
   providers: [
@@ -66,6 +80,10 @@ import {TrainerService} from "./entities/projects/trainer.service";
     { provide: MAT_DIALOG_DATA, useValue: {} },
     { provide: MatDialogRef, useValue: {} },
     ProjectService,
+    AuthenticationService,
+    AddManagerService,
+    AddTrainerService,
+    AddInternService,
     TrainerService,
     AuthenticationService
 ],

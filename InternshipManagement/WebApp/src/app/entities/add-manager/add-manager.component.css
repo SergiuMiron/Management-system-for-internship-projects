@@ -1,0 +1,13 @@
+.add-manager-form {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-form-field {
+  display: block;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
