@@ -24,6 +24,9 @@ namespace BusinessLogic.Read.Configurations
             services.AddScoped<IUserQueryBuilder, UserQueryBuilder>();
             services.AddScoped<IUserLogic, UserLogic>();
 
+            services.AddScoped<ITrainerQueryBuilder, TrainerQueryBuilder>();
+            services.AddScoped<ITrainerLogic, TrainerLogic>();
+
         }
     }
 }
