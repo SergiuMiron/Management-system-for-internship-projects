@@ -5,45 +5,76 @@ import { AuthenticationService } from '../entities/login/login/authentication.se
 import { AddManagerComponent } from '../entities/add-manager/add-manager.component';
 import { AddInternComponent } from '../entities/add-intern/add-intern.component';
 import { AddTrainerComponent } from '../entities/add-trainer/add-trainer.component';
+import {ConfirmationDialogComponent} from "../shared/confirmation-dialog/confirmation-dialog.component";
+import {Router} from "@angular/router";
 
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
 
   // currentUser: string = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).username : null;
   // isLogged: boolean = localStorage.getItem('currentUser') ? true : false;
 
-  constructor(public authenticationService: AuthenticationService, public dialog: MatDialog) { }
+  constructor(public authenticationService: AuthenticationService,
+              public dialog: MatDialog,
+              private router: Router) { }
 
   ngOnInit() {
-    console.log('onInit: ', this.authenticationService.authenticated)
+    console.log('onInit: ', this.authenticationService.authenticated);
   }
 
   clearUsername() {
-    this.authenticationService.deauthenticate();
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '25%',
+      height: '20%',
+      disableClose: true,
+      autoFocus: false,
+      data: 'Are you sure you want to logout?'
+    };
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(res => {
+      if (res) {
+        this.authenticationService.deauthenticate();
+        return this.router.navigate(['/login']);
+      }
+    });
   }
 
   openAddSdmDialog() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.autoFocus = true;
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '30%',
+      disableClose: true,
+      autoFocus: false,
+    };
 
     this.dialog.open(AddManagerComponent, dialogConfig);
   }
 
   openAddTrainerDialog() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.autoFocus = true;
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '30%',
+      disableClose: true,
+      autoFocus: false,
+    };
 
     this.dialog.open(AddTrainerComponent, dialogConfig);
   }
 
   openAddInternDialog() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.autoFocus = true;
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '30%',
+      disableClose: true,
+      autoFocus: false,
+    };
 
     this.dialog.open(AddInternComponent, dialogConfig);
   }

@@ -9,7 +9,7 @@ import { AddTrainerService } from './add-trainer.service';
 @Component({
   selector: 'app-add-trainer',
   templateUrl: './add-trainer.component.html',
-  styleUrls: ['./add-trainer.component.css']
+  styleUrls: ['./add-trainer.component.scss']
 })
 export class AddTrainerComponent {
 
@@ -31,17 +31,17 @@ export class AddTrainerComponent {
       technicalLevel: [Validators.required],
       username: [Validators.required],
       password: [Validators.required],
-    })
+    });
   }
 
   save() {
     this.addManagerService.createTrainerAccount(this.newTrainer).subscribe(
       data => {
-        this.toastr.successToastr('', "The trainer account was successfuly created");
+        this.toastr.successToastr('', 'The trainer account was successfuly created');
         this.dialogRef.close();
       },
       error => {
-        this.toastr.errorToastr('', "There was an issue when creating account. Please try again");
+        this.toastr.errorToastr('', 'There was an issue when creating account. Please try again');
       });
   }
 

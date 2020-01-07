@@ -24,23 +24,23 @@ export class AddManagerComponent {
     @Inject(MAT_DIALOG_DATA) data) {
 
     this.form = formBuilder.group({
-      name:[Validators.required],
-      cnp:[Validators.required],
-      age:[Validators.required],
-      username:[Validators.required],
-      password:[Validators.required],
-    })
+      name: [Validators.required],
+      cnp: [Validators.required],
+      age: [Validators.required],
+      username: [Validators.required],
+      password: [Validators.required],
+    });
   }
 
 
   save() {
     this.addManagerService.createManagerAccount(this.newManager).subscribe(
       data => {
-        this.toastr.successToastr('', "The manager account was successfuly created");
+        this.toastr.successToastr('', 'The manager account was successfuly created');
         this.dialogRef.close();
       },
       error => {
-        this.toastr.errorToastr('', "There was an issue when creating account. Please try again");
+        this.toastr.errorToastr('', 'There was an issue when creating account. Please try again');
       });
   }
 
