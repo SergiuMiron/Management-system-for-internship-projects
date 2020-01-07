@@ -4,10 +4,10 @@ using System.Text;
 
 namespace BusinessLogic.Read.Abstractions.QueryBuilders
 {
-    public interface ITrainerQueryBuilder
+    public interface IManagerQueryBuilder
     {
         string BuildGetQuery();
 
-        string BuildGetByProjectIdQuery(Guid id);
+        string BuildGetByIdQuery(Guid id);
     }
 }

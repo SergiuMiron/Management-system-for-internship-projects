@@ -7,24 +7,24 @@ using System.Text;
 
 namespace BusinessLogic.Read.Implementations.QueryBuilders
 {
-    public class TrainerQueryBuilder : ITrainerQueryBuilder
+    public class ManagerQueryBuilder : IManagerQueryBuilder
     {
         public string BuildGetQuery()
         {
             var queryBuilder = new SelectQueryBuilder();
 
-            queryBuilder.SelectFromTable("Trainer");
+            queryBuilder.SelectFromTable("Manager");
             queryBuilder.BuildQuery();
 
             return queryBuilder.BuildQuery();
         }
 
-        public string BuildGetByProjectIdQuery(Guid id)
+        public string BuildGetByIdQuery(Guid id)
         {
             var queryBuilder = new SelectQueryBuilder();
 
-            queryBuilder.SelectFromTable("Trainer");
-            queryBuilder.AddWhere("IdProject", Comparison.Equals, id.ToString());
+            queryBuilder.SelectFromTable("Manager");
+            queryBuilder.AddWhere("Id", Comparison.Equals, id.ToString());
             queryBuilder.BuildQuery();
 
             return queryBuilder.BuildQuery();

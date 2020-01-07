@@ -8,30 +8,27 @@ using System.Text;
 
 namespace BusinessLogic.Read.Implementations.Logics
 {
-    public class TrainerLogic : ITrainerLogic
+    public class ManagerLogic : IManagerLogic
     {
-
-        private readonly ITrainerQueryBuilder _queryBuilder;
+        private readonly IManagerQueryBuilder _queryBuilder;
 
         private readonly IRepository _repository;
 
-        public TrainerLogic(ITrainerQueryBuilder queryBuilder, IRepository repository)
+        public ManagerLogic(IManagerQueryBuilder queryBuilder, IRepository repository)
         {
             _queryBuilder = queryBuilder;
             _repository = repository;
         }
-
-        public IEnumerable<TrainerDto> GetAll()
+        public IEnumerable<ManagerDto> GetAll()
         {
             var query = _queryBuilder.BuildGetQuery();
-            return _repository.ExecuteQuery<TrainerDto>(query);
+            return _repository.ExecuteQuery<ManagerDto>(query);
         }
 
-        public IEnumerable<TrainerDto> GetAllByProjectId(Guid id)
+        public ManagerDto GetById(Guid id)
         {
-            var query = _queryBuilder.BuildGetByProjectIdQuery(id);
-            return _repository.ExecuteQuery<TrainerDto>(query);
+            var query = _queryBuilder.BuildGetByIdQuery(id);
+            return _repository.ExecuteQueryFirstOrDefault<ManagerDto>(query);
         }
-
     }
 }

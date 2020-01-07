@@ -5,10 +5,10 @@ using System.Text;
 
 namespace BusinessLogic.Read.Abstractions.Logics
 {
-    public interface ITrainerLogic
+    public interface IManagerLogic
     {
-        IEnumerable<TrainerDto> GetAll();
+        IEnumerable<ManagerDto> GetAll();
 
-        IEnumerable<TrainerDto> GetAllByProjectId(Guid id);
+        ManagerDto GetById(Guid id);
     }
 }
