@@ -7,6 +7,10 @@
 
   .icons-container {
     display: flex;
+
+    .mat-icon {
+      cursor: pointer;
+    }
   }
 }
 

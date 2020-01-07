@@ -14,15 +14,6 @@ import {ProjectService} from './entities/projects/project.service';
 import { AuthenticationService } from './entities/login/login/authentication.service';
 import { LoginComponent } from './entities/login/login/login.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {
-  MAT_DIALOG_DATA,
-  MatButtonModule, MatDatepickerModule,
-  MatDialogModule, MatDialogRef,
-  MatFormFieldModule, MatIconModule,
-  MatInputModule, MatNativeDateModule, MatPaginatorModule, MatSelectModule, MatSnackBarModule,
-  MatSortModule,
-  MatTableModule
-} from '@angular/material';
 import {NewProjectComponent} from './entities/projects/project-new/new-project.component';
 import {SharedModule} from './shared/shared.module';
 import {TrainerService} from './entities/projects/trainer.service';
@@ -34,6 +25,8 @@ import { AddTrainerComponent } from './entities/add-trainer/add-trainer.componen
 import { AddManagerService } from './entities/add-manager/add-manager.service';
 import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
 import { AddInternService } from './entities/add-intern/add-intern.service';
+import {AngularMaterialModule} from './angular-material.module';
+import {_MatMenuDirectivesModule, MatMenuModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -51,6 +44,7 @@ import { AddInternService } from './entities/add-intern/add-intern.service';
     NewProjectComponent
   ],
   imports: [
+    AngularMaterialModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -58,25 +52,11 @@ import { AddInternService } from './entities/add-intern/add-intern.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatTableModule,
-    MatSortModule,
-    MatPaginatorModule,
-    MatIconModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSnackBarModule,
     ToastrModule.forRoot(),
-    MatSelectModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-    { provide: MAT_DIALOG_DATA, useValue: {} },
-    { provide: MatDialogRef, useValue: {} },
     ProjectService,
     AuthenticationService,
     AddManagerService,

@@ -4,13 +4,13 @@ import {ProjectService} from './project.service';
 import {
   MatDialog,
   MatDialogConfig,
-  MatDialogRef,
   MatPaginator,
   MatSnackBar,
   MatSort,
   MatTableDataSource
 } from '@angular/material';
 import {NewProjectComponent} from './project-new/new-project.component';
+import {ConfirmationDialogComponent} from '../../shared/confirmation-dialog/confirmation-dialog.component';
 
 @Component({
   selector: 'app-projects',
@@ -57,6 +57,7 @@ export class ProjectsComponent implements OnInit {
     dialogConfig = {
       width: '40%',
       disableClose: true,
+      autoFocus: false,
       data: project
     };
     const dialogRef = this.dialog.open(NewProjectComponent, dialogConfig);
@@ -67,9 +68,24 @@ export class ProjectsComponent implements OnInit {
   }
 
   deleteProject(project: ProjectModel) {
-    this.projectService.delete(project.id).subscribe(res => {
-      this.snackBar.open('Project successfully deleted', 'Dismiss', {duration: 3000});
-      this.initProjects();
+
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '25%',
+      height: '20%',
+      disableClose: true,
+      autoFocus: false,
+      data: 'Are you sure you want to delete this project?'
+    };
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.projectService.delete(project.id).subscribe(res => {
+          this.snackBar.open('Project successfully deleted', 'Dismiss', {duration: 3000});
+          this.initProjects();
+        });
+      }
     });
   }
 
