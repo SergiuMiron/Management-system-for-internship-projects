@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #000000 !important;
+
+  .navbar-brand {
+    color: #F0F8FF;
+    font-weight: bold;
+  }
+
+  .nav-link {
+    //font-family: Roboto, sans-serif;
+    color: #F0F8FF;
+    font-weight: bold;
+  }
+
+  .menu-container {
+    display: flex;
+    cursor: pointer;
+    outline: none
+  }
+}
+
+

@@ -26,7 +26,8 @@ import { AddManagerService } from './entities/add-manager/add-manager.service';
 import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
 import { AddInternService } from './entities/add-intern/add-intern.service';
 import {AngularMaterialModule} from './angular-material.module';
-import {_MatMenuDirectivesModule, MatMenuModule} from "@angular/material";
+import {ProjectMembersComponent} from './entities/projects/project-members/project-members.component';
+import {ManagerService} from "./entities/projects/manager/manager.service";
 
 @NgModule({
   declarations: [
@@ -38,10 +39,12 @@ import {_MatMenuDirectivesModule, MatMenuModule} from "@angular/material";
     NewProjectComponent,
     AddManagerComponent,
     AddInternComponent,
-    AddTrainerComponent
+    AddTrainerComponent,
+    ProjectMembersComponent
   ],
   entryComponents: [
-    NewProjectComponent
+    NewProjectComponent,
+    ProjectMembersComponent
   ],
   imports: [
     AngularMaterialModule,
@@ -63,7 +66,8 @@ import {_MatMenuDirectivesModule, MatMenuModule} from "@angular/material";
     AddTrainerService,
     AddInternService,
     TrainerService,
-    AuthenticationService
+    AuthenticationService,
+    ManagerService
 ],
   bootstrap: [AppComponent]
 })

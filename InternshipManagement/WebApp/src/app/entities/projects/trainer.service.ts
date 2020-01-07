@@ -15,6 +15,10 @@ export class TrainerService {
     return this.http.get<TrainerModel[]>(this.getResourceUrl);
   }
 
+  getAllByProjectId(projectId: string): Observable<TrainerModel[]> {
+    return this.http.get<TrainerModel[]>(`${this.getResourceUrl}/${projectId}`);
+  }
+
   updateTrainersProject(trainers: TrainerModel[], projectId: string): Observable<any> {
     return this.http.put<any>(`${this.putResourceUrl}/${projectId}`, trainers);
   }

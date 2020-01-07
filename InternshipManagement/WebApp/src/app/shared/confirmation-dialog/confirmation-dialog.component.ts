@@ -9,7 +9,6 @@ import {FormGroup} from '@angular/forms';
 })
 export class ConfirmationDialogComponent {
 
-  form: FormGroup;
   message: string;
 
   constructor(private dialogRef: MatDialogRef<ConfirmationDialogComponent>,

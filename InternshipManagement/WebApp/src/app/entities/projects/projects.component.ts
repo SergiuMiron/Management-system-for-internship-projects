@@ -11,6 +11,7 @@ import {
 } from '@angular/material';
 import {NewProjectComponent} from './project-new/new-project.component';
 import {ConfirmationDialogComponent} from '../../shared/confirmation-dialog/confirmation-dialog.component';
+import {ProjectMembersComponent} from "./project-members/project-members.component";
 
 @Component({
   selector: 'app-projects',
@@ -68,7 +69,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   deleteProject(project: ProjectModel) {
-
     let dialogConfig = new MatDialogConfig();
     dialogConfig = {
       width: '25%',
@@ -87,6 +87,16 @@ export class ProjectsComponent implements OnInit {
         });
       }
     });
+  }
+
+  openMembersDialog(project: ProjectModel) {
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      disableClose: true,
+      autoFocus: false,
+      data: project
+    };
+    const dialogRef = this.dialog.open(ProjectMembersComponent, dialogConfig);
   }
 
 }

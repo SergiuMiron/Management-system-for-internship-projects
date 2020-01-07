@@ -8,7 +8,7 @@
     </mat-form-field>
 
     <mat-form-field *ngIf="project.id">
-      <mat-select placeholder="Select a mentor for this project" multiple>
+      <mat-select  placeholder="Select a mentor for this project" multiple>
         <mat-option *ngFor="let trainer of trainers" [value]="trainer.name">{{trainer.name}}</mat-option>
       </mat-select>
     </mat-form-field>
