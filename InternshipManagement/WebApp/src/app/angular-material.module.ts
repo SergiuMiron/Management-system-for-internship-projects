@@ -3,7 +3,7 @@ import {
   _MatMenuDirectivesModule,
   MAT_DIALOG_DATA,
   MatButtonModule, MatDatepickerModule,
-  MatDialogModule, MatDialogRef,
+  MatDialogModule, MatDialogRef, MatExpansionModule,
   MatFormFieldModule, MatIconModule,
   MatInputModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatSelectModule, MatSnackBarModule,
   MatSortModule,
@@ -33,6 +33,7 @@ import {CommonModule} from '@angular/common';
     MatMenuModule,
     _MatMenuDirectivesModule,
     MatMenuModule,
+    MatExpansionModule
   ],
   providers: [
     { provide: MAT_DIALOG_DATA, useValue: {} },
@@ -53,6 +54,7 @@ import {CommonModule} from '@angular/common';
     MatSelectModule,
     _MatMenuDirectivesModule,
     MatMenuModule,
+    MatExpansionModule
   ]
 })
 export class AngularMaterialModule { }
