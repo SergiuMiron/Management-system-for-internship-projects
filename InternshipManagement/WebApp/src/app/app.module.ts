@@ -28,6 +28,7 @@ import { AddInternService } from './entities/add-intern/add-intern.service';
 import {AngularMaterialModule} from './angular-material.module';
 import {ProjectMembersComponent} from './entities/projects/project-members/project-members.component';
 import {ManagerService} from "./entities/projects/manager/manager.service";
+import {InternService} from "./entities/projects/intern/intern.service";
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import {ManagerService} from "./entities/projects/manager/manager.service";
     AddInternService,
     TrainerService,
     AuthenticationService,
-    ManagerService
+    ManagerService,
+    InternService
 ],
   bootstrap: [AppComponent]
 })

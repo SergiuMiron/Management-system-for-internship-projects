@@ -65,7 +65,9 @@ namespace BusinessLogic.Write.Implementations
                 Age = intern.Age,
                 Department = intern.Department,
                 Username = intern.Username,
-                Password = intern.Password
+                Password = intern.Password,
+                IdProject = "0",
+                IdTeam = "0"
             };
 
             _repository.Insert(newIntern);

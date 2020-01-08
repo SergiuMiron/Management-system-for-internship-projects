@@ -4,6 +4,7 @@ import {FormGroup} from '@angular/forms';
 import {ProjectModel} from '../project.model';
 import {TrainerService} from '../trainer.service';
 import {ManagerService} from '../manager/manager.service';
+import {InternService} from "../intern/intern.service";
 
 @Component({
   selector: 'app-project-members-dialog',
@@ -16,6 +17,7 @@ export class ProjectMembersComponent implements OnInit {
 
   constructor(private trainerService: TrainerService,
               private managerService: ManagerService,
+              private internService: InternService,
               private dialogRef: MatDialogRef<ProjectMembersComponent>,
               @Inject(MAT_DIALOG_DATA) data, ) {
     this.project = data;
@@ -23,11 +25,15 @@ export class ProjectMembersComponent implements OnInit {
 
   ngOnInit() {
     this.trainerService.getAllByProjectId(this.project.id).subscribe(res => {
-      console.log('res1: ', res);
+      console.log('trainers: ', res);
     });
 
     this.managerService.getByProjectId(this.project.id).subscribe(res => {
-      console.log('res2: ', res);
+      console.log('manager: ', res);
+    });
+
+    this.internService.getAllByProjectId(this.project.id).subscribe(res => {
+      console.log('interns: ', res);
     });
   }
 
