@@ -20,7 +20,6 @@ namespace Services.Read.Controllers
             _trainerLogic = trainerLogic;
         }
 
-        // GET api/projects
         [HttpGet]
         public IEnumerable<TrainerDto> GetAll()
         {

@@ -20,7 +20,6 @@ namespace Services.Read.Controllers
             _managerLogic = managerLogic;
         }
 
-        // GET api/interns
         [HttpGet]
         public IEnumerable<ManagerDto> GetAll()
         {
@@ -28,9 +27,9 @@ namespace Services.Read.Controllers
         }
 
         [HttpGet("{id}")]
-        public ManagerDto GetById([FromRoute] Guid id)
+        public ManagerDto GetByProjectId([FromRoute] Guid id)
         {
-            return _managerLogic.GetById(id);
+            return _managerLogic.GetByProjectId(id);
         }
     }
 }

@@ -9,6 +9,6 @@ namespace BusinessLogic.Read.Abstractions.Logics
     {
         IEnumerable<ManagerDto> GetAll();
 
-        ManagerDto GetById(Guid id);
+        ManagerDto GetByProjectId(Guid id);
     }
 }

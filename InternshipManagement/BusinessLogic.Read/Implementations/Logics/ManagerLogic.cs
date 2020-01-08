@@ -25,9 +25,9 @@ namespace BusinessLogic.Read.Implementations.Logics
             return _repository.ExecuteQuery<ManagerDto>(query);
         }
 
-        public ManagerDto GetById(Guid id)
+        public ManagerDto GetByProjectId(Guid id)
         {
-            var query = _queryBuilder.BuildGetByIdQuery(id);
+            var query = _queryBuilder.BuildGetByProjectIdQuery(id);
             return _repository.ExecuteQueryFirstOrDefault<ManagerDto>(query);
         }
     }

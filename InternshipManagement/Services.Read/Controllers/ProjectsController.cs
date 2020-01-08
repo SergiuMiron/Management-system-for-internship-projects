@@ -20,7 +20,6 @@ namespace Services.Read.Controllers
             _projectLogic = projectLogic;
         }
 
-        // GET api/projects
         [HttpGet]
         public IEnumerable<ProjectDto> GetAll()
         {
