@@ -71,8 +71,6 @@ export class ProjectsComponent implements OnInit {
   deleteProject(project: ProjectModel) {
     let dialogConfig = new MatDialogConfig();
     dialogConfig = {
-      width: '25%',
-      height: '20%',
       disableClose: true,
       autoFocus: false,
       data: 'Are you sure you want to delete this project?'
@@ -92,6 +90,7 @@ export class ProjectsComponent implements OnInit {
   openMembersDialog(project: ProjectModel) {
     let dialogConfig = new MatDialogConfig();
     dialogConfig = {
+      width: '50%',
       disableClose: true,
       autoFocus: false,
       data: project
