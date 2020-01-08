@@ -25,7 +25,7 @@ namespace BusinessLogic.Write.Implementations
                 StartDate = project.StartDate,
                 EndDate = project.EndDate,
                 TechnologyStack = project.TechnologyStack,
-                IdSdm = Guid.NewGuid().ToString() //project.IdSdm  //to to: get for SdmId
+                IdSdm = project.IdSdm
             };
 
             _repository.Insert(newProject);
