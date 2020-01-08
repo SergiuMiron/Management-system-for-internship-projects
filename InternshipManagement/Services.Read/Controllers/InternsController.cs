@@ -20,7 +20,6 @@ namespace Services.Read.Controllers
             _internLogic = internLogic;
         }
 
-        // GET api/interns
         [HttpGet]
         public IEnumerable<InternDto> GetAll()
         {

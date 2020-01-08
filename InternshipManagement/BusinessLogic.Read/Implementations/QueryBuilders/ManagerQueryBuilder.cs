@@ -19,12 +19,13 @@ namespace BusinessLogic.Read.Implementations.QueryBuilders
             return queryBuilder.BuildQuery();
         }
 
-        public string BuildGetByIdQuery(Guid id)
+        public string BuildGetByProjectIdQuery(Guid id)
         {
             var queryBuilder = new SelectQueryBuilder();
 
             queryBuilder.SelectFromTable("Manager");
-            queryBuilder.AddWhere("Id", Comparison.Equals, id.ToString());
+            queryBuilder.AddJoin(JoinType.InnerJoin, "Project", "IdSdm", Comparison.Equals, "Manager", "Id");
+            queryBuilder.AddWhere("Project.Id", Comparison.Equals, id.ToString());
             queryBuilder.BuildQuery();
 
             return queryBuilder.BuildQuery();
