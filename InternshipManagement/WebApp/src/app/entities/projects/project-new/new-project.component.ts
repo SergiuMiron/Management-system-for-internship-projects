@@ -41,6 +41,7 @@ export class NewProjectComponent implements OnInit {
 
   save() {
     if (!this.project.id) {
+      this.project.idSdm = JSON.parse(localStorage.getItem('currentUser')).id;
       this.projectService.create(this.project).subscribe(() => {
           this.dialogRef.close();
           this.snackBar.open('The project was successfully created', 'Dismiss', {duration: 3000});
