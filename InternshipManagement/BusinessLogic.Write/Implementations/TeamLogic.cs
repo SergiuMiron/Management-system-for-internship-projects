@@ -22,7 +22,7 @@ namespace BusinessLogic.Write.Implementations
             {
                 Id = Guid.NewGuid(),
                 Name = team.Name,
-                Descripiton = team.Descripiton,
+                Description = team.Description,
                 IdProject = team.IdProject
             };
 
@@ -41,7 +41,7 @@ namespace BusinessLogic.Write.Implementations
             }
 
             if (team.Name != null) { teamToUpdate.Name = team.Name; }
-            if (team.Descripiton != null) { teamToUpdate.Descripiton = team.Descripiton; }
+            if (team.Description != null) { teamToUpdate.Description = team.Description; }
             if (team.IdProject != null) { teamToUpdate.IdProject = team.IdProject; }
 
             _repository.Update(teamToUpdate);

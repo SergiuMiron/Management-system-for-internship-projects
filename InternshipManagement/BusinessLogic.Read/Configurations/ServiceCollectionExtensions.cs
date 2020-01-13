@@ -36,6 +36,9 @@ namespace BusinessLogic.Read.Configurations
             services.AddScoped<IEventQueryBuilder, EventQueryBuilder>();
             services.AddScoped<IEventLogic, EventLogic>();
 
+            services.AddScoped<IFeedbackQueryBuilder, FeedbackQueryBuilder>();
+            services.AddScoped<IFeedbackLogic, FeedbackLogic>();
+
         }
     }
 }

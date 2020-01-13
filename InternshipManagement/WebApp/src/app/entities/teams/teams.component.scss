@@ -1,0 +1,28 @@
+.table-container {
+  padding-top: 10%;
+
+  .add-team-button {
+    float: right;
+  }
+
+  .icons-container {
+    display: flex;
+
+    .mat-icon {
+      cursor: pointer;
+    }
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 25%;
+}
+
+td, th {
+  width: 25%;
+}
