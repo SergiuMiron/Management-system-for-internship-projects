@@ -54,14 +54,14 @@ namespace BusinessLogic.Write.Implementations
         public void Delete(string id)
         {
             Guid Id = new Guid(id);
-            Project productToDelete = _repository.GetByFilter<Project>(p => p.Id == Id);
+            Project projectToDelete = _repository.GetByFilter<Project>(p => p.Id == Id);
 
-            if (productToDelete == null)
+            if (projectToDelete == null)
             {
                 return;
             }
 
-            _repository.Delete(productToDelete);
+            _repository.Delete(projectToDelete);
             _repository.Save();
         }
     }

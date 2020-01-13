@@ -20,7 +20,7 @@ namespace Services.Write.Controllers
             _projectLogic = projectLogic;
         }
 
-        //create product
+        //create project
         [HttpPost]
         public IActionResult Create([FromBody] ProjectDto projectDto)
         {
