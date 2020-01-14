@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d14bb77a-43b5-47ad-bccd-68547b58a420" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IEventLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IFeedbackLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/ITeamLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IEventQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IFeedbackQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/ITeamQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/EventLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/FeedbackLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/TeamLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/EventQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/FeedbackQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/TeamQueryBuilder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/IEventLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/IFeedbackLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/ITeamLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/EventLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/FeedbackLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TeamLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/EventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/FeedbackDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/TeamDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/EventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/FeedbackDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/TeamDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/UpdateEventDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/UpdateTeamDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/EventsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/FeedbacksController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/TeamsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/EventsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/FeedbacksController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/TeamsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Configurations/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Configurations/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Configurations/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Configurations/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/ProjectLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/ProjectLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/EventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/EventConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/TeamConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/TeamConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/Event.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/Team.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/Team.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/ProjectsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/ProjectsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path=".vs/Management-system-for-internship-projects/v15/.suo" />
+    <ignored path=".vs/slnx.sqlite" />
+    <ignored path=".vs/VSWorkspaceState.json" />
+    <ignored path="InternshipManagement/.vs/config/applicationhost.config" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/DesignTimeBuild/.dtbcache" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/v15/Server/sqlite3/db.lock" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/v15/Server/sqlite3/storage.ide" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/v15/Server/sqlite3/storage.ide-shm" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/v15/Server/sqlite3/storage.ide-wal" />
+    <ignored path="InternshipManagement/.vs/InternshipManagement/v15/.suo" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Management-system-for-internship-projects" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="54" selection-start-line="54" selection-end-line="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                  <folding>
+                    <element signature="n#style#0;n#button#0;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#1;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#2;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#59#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+                  <folding>
+                    <element signature="e#0#58#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>app-login</find>
+      <find>styles.css</find>
+      <find>boo</find>
+      <find>MatDialogRef</find>
+      <find>manager</find>
+      <find>app-load</find>
+    </findStrings>
+    <dirStrings>
+      <dir>D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects\InternshipManagement\WebApp</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/package.json" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/login/login/authentication.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/pipes/date.pipe.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.css" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/styles.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/trainer.model.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project.model.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/trainer.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/confirmation-dialog/confirmation-dialog.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/manager/manager.model.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/index.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.css" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.model.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/manager/manager.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/confirmation-dialog/confirmation-dialog.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/confirmation-dialog/confirmation-dialog.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-intern/add-intern.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-intern/add-intern.component.css" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.css" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/angular-material.module.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.scss" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.service.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/interceptors/loader.interceptor.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts" />
+        <option value="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/Management-system-for-internship-projects.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="entities" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="entities" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="projects" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="entities" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="teams" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="InternshipManagement" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="WebApp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="shared" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/Diamos_AI_Projects/real-estate" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\Master\Dezvoltarea aplicatiilor multistrat\Management-system-for-internship-projects\InternshipManagement\WebApp\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d14bb77a-43b5-47ad-bccd-68547b58a420" name="Default Changelist" comment="" />
+      <created>1572265681209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572265681209</updated>
+      <workItem from="1572265682450" duration="5477000" />
+      <workItem from="1572273272701" duration="695000" />
+      <workItem from="1572977169934" duration="730000" />
+      <workItem from="1573027613476" duration="71000" />
+      <workItem from="1573111432245" duration="599000" />
+      <workItem from="1574250640785" duration="3206000" />
+      <workItem from="1574254322645" duration="4889000" />
+      <workItem from="1574329187971" duration="585000" />
+      <workItem from="1576410477841" duration="3640000" />
+      <workItem from="1576485972272" duration="18000" />
+      <workItem from="1577435477422" duration="3199000" />
+      <workItem from="1577692061202" duration="916000" />
+      <workItem from="1577693661938" duration="11485000" />
+      <workItem from="1577971129012" duration="3074000" />
+      <workItem from="1577977603393" duration="375000" />
+      <workItem from="1577977993962" duration="58000" />
+      <workItem from="1577991051748" duration="481000" />
+      <workItem from="1577991550139" duration="763000" />
+      <workItem from="1578067343703" duration="34315000" />
+      <workItem from="1578226141801" duration="1455000" />
+      <workItem from="1578228188350" duration="4028000" />
+      <workItem from="1578247646295" duration="1349000" />
+      <workItem from="1578258424124" duration="6134000" />
+      <workItem from="1578294013397" duration="130000" />
+      <workItem from="1578312248436" duration="221000" />
+      <workItem from="1578326689744" duration="12577000" />
+      <workItem from="1578403305236" duration="44000" />
+      <workItem from="1578403436868" duration="21421000" />
+      <workItem from="1578433785881" duration="1348000" />
+      <workItem from="1578466789405" duration="3151000" />
+      <workItem from="1578471144674" duration="2360000" />
+      <workItem from="1578473821467" duration="16056000" />
+      <workItem from="1578601200919" duration="1277000" />
+      <workItem from="1578647814410" duration="6000" />
+      <workItem from="1579023623366" duration="621000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="146754000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" weight="0.18967333" />
+      <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" weight="0.24973656" />
+      <window_info id="Favorites" order="2" sideWeight="0.50083196" side_tool="true" weight="0.24973656" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32998884" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" visible="true" weight="0.32887402" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49894625" weight="0.32552955" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50105375" side_tool="true" weight="0.32552955" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32998884" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/polyfills.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1112" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="42" column="61" lean-forward="true" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-intern/add-intern.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.model.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/manager/manager.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" lean-forward="true" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/manager/manager.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/node_modules/@angular/material/table/typings/table-data-source.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-new/new-project.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/confirmation-dialog/confirmation-dialog.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/confirmation-dialog/confirmation-dialog.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-intern/add-intern.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-manager/add-manager.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-intern/add-intern.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/add-trainer/add-trainer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/angular-material.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="63" column="22" lean-forward="true" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2184">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/login/login/authentication.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/helpers/jwt.interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/interceptors/loader.interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/shared/loader/loader.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#2;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

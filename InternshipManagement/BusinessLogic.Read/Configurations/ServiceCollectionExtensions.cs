@@ -30,6 +30,15 @@ namespace BusinessLogic.Read.Configurations
             services.AddScoped<IManagerQueryBuilder, ManagerQueryBuilder>();
             services.AddScoped<IManagerLogic, ManagerLogic>();
 
+            services.AddScoped<ITeamQueryBuilder, TeamQueryBuilder>();
+            services.AddScoped<ITeamLogic, TeamLogic>();
+
+            services.AddScoped<IEventQueryBuilder, EventQueryBuilder>();
+            services.AddScoped<IEventLogic, EventLogic>();
+
+            services.AddScoped<IFeedbackQueryBuilder, FeedbackQueryBuilder>();
+            services.AddScoped<IFeedbackLogic, FeedbackLogic>();
+
         }
     }
 }

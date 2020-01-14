@@ -16,7 +16,7 @@ namespace DataAccess.Write.Configurations.Entities
 
             builder.Property(p => p.Description).IsRequired();
 
-            builder.Property(p => p.Location).IsRequired();
+            builder.Property(p => p.Department).IsRequired();
         }
     }
 }

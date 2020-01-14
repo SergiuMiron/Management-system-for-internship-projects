@@ -12,7 +12,7 @@ namespace DataAccess.Write.Configurations.Entities
 
             builder.Property(p => p.Name).IsRequired().HasMaxLength(30);
 
-            builder.Property(p => p.Descripiton).IsRequired();
+            builder.Property(p => p.Description).IsRequired();
 
             builder.Property(p => p.IdProject).IsRequired();
         }
