@@ -27,8 +27,9 @@ import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
 import { AddInternService } from './entities/add-intern/add-intern.service';
 import {AngularMaterialModule} from './angular-material.module';
 import {ProjectMembersComponent} from './entities/projects/project-members/project-members.component';
-import {ManagerService} from "./entities/projects/manager/manager.service";
-import {InternService} from "./entities/projects/intern/intern.service";
+import {ManagerService} from './entities/projects/manager/manager.service';
+import {InternService} from './entities/projects/intern/intern.service';
+import {LoaderInterceptor} from './interceptors/loader.interceptor';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import {InternService} from "./entities/projects/intern/intern.service";
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     ProjectService,
     AuthenticationService,
     AddManagerService,

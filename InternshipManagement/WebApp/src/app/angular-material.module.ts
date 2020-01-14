@@ -2,10 +2,20 @@ import { NgModule } from '@angular/core';
 import {
   _MatMenuDirectivesModule,
   MAT_DIALOG_DATA,
-  MatButtonModule, MatDatepickerModule,
-  MatDialogModule, MatDialogRef, MatExpansionModule,
-  MatFormFieldModule, MatIconModule,
-  MatInputModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatSelectModule, MatSnackBarModule,
+  MatButtonModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDialogRef,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressSpinnerModule,
+  MatSelectModule,
+  MatSnackBarModule,
   MatSortModule,
   MatTableModule
 } from '@angular/material';
@@ -33,7 +43,8 @@ import {CommonModule} from '@angular/common';
     MatMenuModule,
     _MatMenuDirectivesModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     { provide: MAT_DIALOG_DATA, useValue: {} },
@@ -54,7 +65,8 @@ import {CommonModule} from '@angular/common';
     MatSelectModule,
     _MatMenuDirectivesModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatProgressSpinnerModule
   ]
 })
 export class AngularMaterialModule { }
