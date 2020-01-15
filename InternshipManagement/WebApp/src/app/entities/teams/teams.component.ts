@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { TeamModel } from './team.model';
 import { TeamService} from './team.service';
 import {
-  MatDialog,
+  MatDialog, MatDialogConfig,
   MatPaginator,
   MatSnackBar,
   MatSort,

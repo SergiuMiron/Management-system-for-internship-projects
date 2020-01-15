@@ -24,13 +24,13 @@ export class NewTeamComponent implements OnInit {
   projects: ProjectModel[] = [];
 
   constructor(private teamService: TeamService,
-    private trainerService: TrainerService,
-    private internService: InternService,
-    private projectService: ProjectService,
-    private formBuilder: FormBuilder,
-    private dialogRef: MatDialogRef<NewTeamComponent>,
-    @Inject(MAT_DIALOG_DATA) data,
-    private snackBar: MatSnackBar) {
+              private trainerService: TrainerService,
+              private internService: InternService,
+              private projectService: ProjectService,
+              private formBuilder: FormBuilder,
+              private dialogRef: MatDialogRef<NewTeamComponent>,
+              @Inject(MAT_DIALOG_DATA) data,
+              private snackBar: MatSnackBar) {
     this.team = { ...data };
 
     this.form = formBuilder.group({
