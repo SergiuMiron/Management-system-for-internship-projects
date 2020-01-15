@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {
   _MatMenuDirectivesModule,
   MAT_DIALOG_DATA,
@@ -67,6 +67,7 @@ import {CommonModule} from '@angular/common';
     MatMenuModule,
     MatExpansionModule,
     MatProgressSpinnerModule
-  ]
+  ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AngularMaterialModule { }

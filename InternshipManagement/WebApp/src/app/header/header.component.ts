@@ -5,8 +5,9 @@ import { AuthenticationService } from '../entities/login/login/authentication.se
 import { AddManagerComponent } from '../entities/add-manager/add-manager.component';
 import { AddInternComponent } from '../entities/add-intern/add-intern.component';
 import { AddTrainerComponent } from '../entities/add-trainer/add-trainer.component';
-import {ConfirmationDialogComponent} from "../shared/confirmation-dialog/confirmation-dialog.component";
-import {Router} from "@angular/router";
+import {ConfirmationDialogComponent} from '../shared/confirmation-dialog/confirmation-dialog.component';
+import {Router} from '@angular/router';
+import {FeedbackComponent} from '../entities/feedback/feedback.component';
 
 
 @Component({
@@ -75,6 +76,17 @@ export class HeaderComponent implements OnInit {
     };
 
     this.dialog.open(AddInternComponent, dialogConfig);
+  }
+
+  openFeedbackDialog() {
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '30%',
+      disableClose: true,
+      autoFocus: false
+    };
+
+    this.dialog.open(FeedbackComponent, dialogConfig);
   }
 
 }

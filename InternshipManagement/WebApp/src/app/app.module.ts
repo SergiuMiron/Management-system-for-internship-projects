@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
@@ -29,6 +29,11 @@ import { TeamService } from './entities/teams/team.service';
 import {ProjectMembersComponent} from './entities/projects/project-members/project-members.component';
 import {ManagerService} from './entities/projects/manager/manager.service';
 import {InternService} from './entities/projects/intern/intern.service';
+import {FeedbackComponent} from './entities/feedback/feedback.component';
+import {FeedbackService} from './entities/feedback/feedback.service';
+import {EventsComponent} from './entities/event/events.component';
+import {EventService} from './entities/event/event.service';
+import {EventDialogComponent} from './entities/event/event-dialog/event-dialog.component';
 
 @NgModule({
   declarations: [
@@ -41,11 +46,15 @@ import {InternService} from './entities/projects/intern/intern.service';
     AddManagerComponent,
     AddInternComponent,
     AddTrainerComponent,
-    ProjectMembersComponent
+    ProjectMembersComponent,
+    FeedbackComponent,
+    EventsComponent,
+    EventDialogComponent
   ],
   entryComponents: [
     NewProjectComponent,
-    ProjectMembersComponent
+    ProjectMembersComponent,
+    EventDialogComponent
   ],
   imports: [
     AngularMaterialModule,
@@ -71,8 +80,11 @@ import {InternService} from './entities/projects/intern/intern.service';
     AuthenticationService,
     ManagerService,
     InternService,
-    TeamService
+    TeamService,
+    FeedbackService,
+    EventService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
