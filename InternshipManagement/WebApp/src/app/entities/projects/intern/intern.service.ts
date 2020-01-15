@@ -7,6 +7,7 @@ import {InternModel} from './intern.model';
 export class InternService {
 
   private getResourceUrl = 'https://localhost:44390/api/interns';
+  private putResourceUrl = 'https://localhost:44307/api/interns/update-interns';
 
   constructor(private http: HttpClient) {}
 
@@ -15,7 +16,16 @@ export class InternService {
   }
 
   getAllByProjectId(projectId: string): Observable<InternModel[]> {
-    return this.http.get<InternModel[]>(`${this.getResourceUrl}/${projectId}`);
+    return this.http.get<InternModel[]>(`${this.getResourceUrl}/project/${projectId}`);
+  }
+
+  getAllByTeamId(teamId: string): Observable<InternModel[]> {
+    return this.http.get<InternModel[]>(`${this.getResourceUrl}/team/${teamId}`);
+  }
+
+  updateInternsTeam(interns: InternModel[], teamId: string): Observable<any> {
+    console.log("interns: ", interns)
+    return this.http.put<any>(`${this.putResourceUrl}/team/${teamId}`, interns);
   }
 
 }

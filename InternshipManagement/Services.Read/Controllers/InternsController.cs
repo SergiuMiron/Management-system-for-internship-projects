@@ -26,10 +26,16 @@ namespace Services.Read.Controllers
             return _internLogic.GetAll();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("project/{id}")]
         public IEnumerable<InternDto> GetAllByProjectId([FromRoute] Guid id)
         {
             return _internLogic.GetAllByProjectId(id);
+        }
+
+        [HttpGet("team/{id}")]
+        public IEnumerable<InternDto> GetAllByTeamId([FromRoute] Guid id)
+        {
+            return _internLogic.GetAllByTeamId(id);
         }
     }
 }

@@ -16,9 +16,12 @@ import { HeaderComponent } from './header/header.component';
 import { TeamsComponent } from './entities/teams/teams.component';
 import { ProjectsComponent } from './entities/projects/projects.component';
 import { NewProjectComponent } from './entities/projects/project-new/new-project.component';
+import { NewTeamComponent } from './entities/teams/new-team/new-team.component';
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddInternComponent } from './entities/add-intern/add-intern.component';
 import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
+import { TeamMembersComponent } from './entities/teams/team-members/team-members.component';
+
 import { AddManagerService } from './entities/add-manager/add-manager.service';
 import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
 import { AddInternService } from './entities/add-intern/add-intern.service';
@@ -43,9 +46,12 @@ import {EventDialogComponent} from './entities/event/event-dialog/event-dialog.c
     ProjectsComponent,
     LoginComponent,
     NewProjectComponent,
+    NewTeamComponent,
     AddManagerComponent,
     AddInternComponent,
     AddTrainerComponent,
+    ProjectMembersComponent,
+    TeamMembersComponent,
     ProjectMembersComponent,
     FeedbackComponent,
     EventsComponent,
@@ -53,6 +59,9 @@ import {EventDialogComponent} from './entities/event/event-dialog/event-dialog.c
   ],
   entryComponents: [
     NewProjectComponent,
+    NewTeamComponent,
+    ProjectMembersComponent,
+    TeamMembersComponent,
     ProjectMembersComponent,
     EventDialogComponent
   ],

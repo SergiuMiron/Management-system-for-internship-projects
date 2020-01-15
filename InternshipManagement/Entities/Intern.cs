@@ -18,7 +18,7 @@ namespace Entities
 
         public string Password { get; set; }
 
-        public float Rating { get; set; }
+        public double Rating { get; set; }
 
         public string IdTeam { get; set; }
 

@@ -2,64 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d14bb77a-43b5-47ad-bccd-68547b58a420" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IEventLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IFeedbackLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/ITeamLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IEventQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IFeedbackQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/ITeamQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/EventLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/FeedbackLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/TeamLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/EventQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/FeedbackQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/TeamQueryBuilder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/IEventLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/IFeedbackLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/ITeamLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/EventLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/FeedbackLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TeamLogic.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/EventDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/FeedbackDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/TeamDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/EventDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/FeedbackDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/TeamDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/UpdateEventDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/UpdateTeamDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/EventsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/FeedbacksController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/TeamsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/EventsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/FeedbacksController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/TeamsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Configurations/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Configurations/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/IInternLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/InternLogic.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/InternsController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/new-team/new-team.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/new-team/new-team.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/new-team/new-team.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team-members/team-members.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team-members/team-members.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team-members/team-members.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/.vs/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/.vs/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IInternLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/IInternLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/ITrainerLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/Logics/ITrainerLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IInternQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IInternQueryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/ITrainerQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/ITrainerQueryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IUserQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Abstractions/QueryBuilders/IUserQueryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/InternLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/InternLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/TrainerLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/TrainerLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/UserLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/Logics/UserLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/InternQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/InternQueryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/TrainerQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/TrainerQueryBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/UserQueryBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/Implementations/QueryBuilders/UserQueryBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Read/obj/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/ITrainerLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Abstractions/ITrainerLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Configurations/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Configurations/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/ProjectLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/ProjectLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TeamLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TeamLogic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TrainerLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/Implementations/TrainerLogic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/BusinessLogic.Write/obj/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
@@ -68,56 +52,49 @@
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Read/obj/Debug/netcoreapp2.2/DataAccess.Read.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/EventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/EventConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/TeamConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/Configurations/Entities/TeamConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/DataAccess.Write/obj/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/Team.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/Team.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/Intern.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/Intern.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Entities/obj/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/InternDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/InternDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Read/obj/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/InternDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/InternDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/TeamDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/TeamDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Models.Write/obj/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/InternsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/InternsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/TrainersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Controllers/TrainersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Models.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/bin/Debug/netcoreapp2.2/Services.Read.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Read/obj/Debug/netcoreapp2.2/Services.Read.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/ProjectsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/ProjectsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/TrainersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Controllers/TrainersController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Read.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/BusinessLogic.Write.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/DataAccess.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Entities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Read.dll" afterDir="false" />
@@ -126,15 +103,16 @@
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Models.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/bin/Debug/netcoreapp2.2/Services.Write.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.dll" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/Services.Write/obj/Debug/netcoreapp2.2/Services.Write.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/intern/intern.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/project-members/project-members.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/trainer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/trainer.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -156,88 +134,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Management-system-for-internship-projects" />
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="54" column="23" lean-forward="true" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#61#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/teams.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="54" selection-start-line="54" selection-end-line="54" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/teams/team.model.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
-                  <folding>
-                    <element signature="n#style#0;n#button#0;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#button#1;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#button#2;n#mat-menu#0;n#div#0;n#td#0;n#ng-container#4;n#table#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/entities/projects/projects.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#59#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-                  <folding>
-                    <element signature="e#0#58#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -367,7 +278,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -446,10 +357,39 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Management-system-for-internship-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Management-system-for-internship-projects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Management-system-for-internship-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="InternshipManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Management-system-for-internship-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="InternshipManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Management-system-for-internship-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Management-system-for-internship-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="InternshipManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="WebApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="D:/Diamos_AI_Projects/real-estate" />
@@ -525,7 +465,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146754000" />
+    <option name="totallyTimeSpent" value="146972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,7 +480,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" weight="0.18967333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" weight="0.24973656" />
       <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="2" sideWeight="0.50083196" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -952,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InternshipManagement/WebApp/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="277">
+          <caret line="94" column="4" lean-forward="true" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>

@@ -10,5 +10,7 @@ namespace BusinessLogic.Read.Abstractions.Logics
         IEnumerable<TrainerDto> GetAll();
 
         IEnumerable<TrainerDto> GetAllByProjectId(Guid id);
+
+        IEnumerable<TrainerDto> GetAllByTeamId(Guid id);
     }
 }

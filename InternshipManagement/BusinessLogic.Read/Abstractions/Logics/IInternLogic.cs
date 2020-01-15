@@ -10,5 +10,7 @@ namespace BusinessLogic.Read.Abstractions.Logics
         IEnumerable<InternDto> GetAll();
 
         IEnumerable<InternDto> GetAllByProjectId(Guid id);
+
+        IEnumerable<InternDto> GetAllByTeamId(Guid id);
     }
 }

@@ -9,5 +9,7 @@ namespace BusinessLogic.Read.Abstractions.QueryBuilders
         string BuildGetQuery();
 
         string BuildGetByProjectIdQuery(Guid id);
+
+        string BuildGetByTeamIdQuery(Guid id);
     }
 }

@@ -16,6 +16,7 @@ namespace BusinessLogic.Write.Configurations
             services.AddScoped<IProjectLogic, ProjectLogic>();
             services.AddScoped<IUserLogic, UserLogic>();
             services.AddScoped<ITrainerLogic, TrainerLogic>();
+            services.AddScoped<IInternLogic, InternLogic>();
             services.AddScoped<ITeamLogic, TeamLogic>();
             services.AddScoped<IFeedbackLogic, FeedbackLogic>();
             services.AddScoped<IEventLogic, EventLogic>();

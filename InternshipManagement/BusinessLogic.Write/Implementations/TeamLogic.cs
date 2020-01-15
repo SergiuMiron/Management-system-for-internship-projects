@@ -18,15 +18,28 @@ namespace BusinessLogic.Write.Implementations
         }
         public void Create(TeamDto team)
         {
+            Guid idTeam = Guid.NewGuid();
             var newTeam = new Team
             {
-                Id = Guid.NewGuid(),
+                Id = idTeam,
                 Name = team.Name,
                 Description = team.Description,
                 IdProject = team.IdProject
             };
 
+            Guid Id = new Guid(team.IdTrainerCreator);
+            Trainer trainerToUpdate = _repository.GetByFilter<Trainer>(p => p.Id == Id);
+
+            if (trainerToUpdate == null)
+            {
+                return;
+            }
+
+            trainerToUpdate.IdTeam = idTeam.ToString();
+            trainerToUpdate.IdProject = team.IdProject;
+
             _repository.Insert(newTeam);
+            _repository.Update(trainerToUpdate);
             _repository.Save();
         }
 

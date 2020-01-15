@@ -1,0 +1,39 @@
+<div class="form-container">
+  <h2 mat-dialog-title>{{team.id? 'Edit Team': 'Add New Team'}}</h2>
+
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+      <input matInput formControlName="name" id="name" name="name"
+             placeholder="Enter team name" [(ngModel)]="team.name">
+    </mat-form-field>
+
+    <mat-form-field *ngIf="team.id">
+      <mat-select  placeholder="Select a mentor for this team" multiple>
+        <mat-option *ngFor="let trainer of trainers" [value]="trainer.name">{{trainer.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field *ngIf="team.id">
+      <mat-select  placeholder="Select interns for this team" multiple>
+        <mat-option *ngFor="let intern of interns" [value]="intern.name">{{intern.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="description" id="description"
+             name="description" placeholder="Description of the team"
+             [(ngModel)]="team.description">
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-form-field *ngIf="!team.id">
+    <mat-select  placeholder="Select a project for this team" [(ngModel)]="team.idProject">
+      <mat-option *ngFor="let project of projects" [value]="project.id">{{project.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Close</button>
+    <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="save()">Save</button>
+  </mat-dialog-actions>
+</div>

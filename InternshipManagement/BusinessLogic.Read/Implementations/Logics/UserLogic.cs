@@ -35,17 +35,29 @@ namespace BusinessLogic.Read.Implementations.Logics
 
         public UserDto GetByUsernameAndPassword(string username, string password)
         {
-            var query = _queryBuilder.BuildGetByUsernameAndPasswordQuery(username, password);
+            var query = _queryBuilder.BuildGetByUsernameAndPasswordQueryManager(username, password);
             return _repository.ExecuteQueryFirstOrDefault<UserDto>(query);
         }
 
         public UserDto Authenticate(string username, string password)
         {
-            var query = _queryBuilder.BuildGetByUsernameAndPasswordQuery(username, password);
+            var query = _queryBuilder.BuildGetByUsernameAndPasswordQueryManager(username, password);
             var user = _repository.ExecuteQueryFirstOrDefault<UserDto>(query);
 
             if (user == null)
-                return null;
+            {
+                query = _queryBuilder.BuildGetByUsernameAndPasswordQueryTrainer(username, password);
+                user = _repository.ExecuteQueryFirstOrDefault<UserDto>(query);
+
+                if(user == null)
+                {
+                    query = _queryBuilder.BuildGetByUsernameAndPasswordQueryIntern(username, password);
+                    user = _repository.ExecuteQueryFirstOrDefault<UserDto>(query);
+
+                    if (user == null)
+                        return null;
+                }
+            }
 
             //auth successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();

@@ -18,8 +18,8 @@ export class ProjectMembersComponent implements OnInit {
   project: ProjectModel;
 
   managerDataSource: MatTableDataSource<ManagerModel>;
-  internDataSource: MatTableDataSource<ManagerModel>;
-  trainerDataSource: MatTableDataSource<ManagerModel>;
+  internDataSource: MatTableDataSource<InternModel>;
+  trainerDataSource: MatTableDataSource<TrainerModel>;
 
   managerColumns: string[] = ['name', 'age', 'department'];
   internColumns: string[] = ['name', 'age', 'department', 'rating'];

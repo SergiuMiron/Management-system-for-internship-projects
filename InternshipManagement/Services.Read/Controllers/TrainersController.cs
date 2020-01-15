@@ -26,10 +26,16 @@ namespace Services.Read.Controllers
             return _trainerLogic.GetAll();
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("project/{id}")]
         public IEnumerable<TrainerDto> GetAllByProjectId([FromRoute] Guid id)
         {
             return _trainerLogic.GetAllByProjectId(id);
+        }
+
+        [HttpGet("team/{id}")]
+        public IEnumerable<TrainerDto> GetAllByTeamId([FromRoute] Guid id)
+        {
+            return _trainerLogic.GetAllByTeamId(id);
         }
     }
 }

@@ -16,11 +16,18 @@ export class TrainerService {
   }
 
   getAllByProjectId(projectId: string): Observable<TrainerModel[]> {
-    return this.http.get<TrainerModel[]>(`${this.getResourceUrl}/${projectId}`);
+    return this.http.get<TrainerModel[]>(`${this.getResourceUrl}/project/${projectId}`);
+  }
+
+  getAllByTeamId(teamId: string): Observable<TrainerModel[]> {
+    return this.http.get<TrainerModel[]>(`${this.getResourceUrl}/team/${teamId}`);
   }
 
   updateTrainersProject(trainers: TrainerModel[], projectId: string): Observable<any> {
-    return this.http.put<any>(`${this.putResourceUrl}/${projectId}`, trainers);
+    return this.http.put<any>(`${this.putResourceUrl}/project/${projectId}`, trainers);
+  }
+  updateTrainersTeam(trainers: TrainerModel[], teamId: string): Observable<any> {
+    return this.http.put<any>(`${this.putResourceUrl}/team/${teamId}`, trainers);
   }
 
 }
