@@ -37,9 +37,6 @@ import {FeedbackService} from './entities/feedback/feedback.service';
 import {EventsComponent} from './entities/event/events.component';
 import {EventService} from './entities/event/event.service';
 import {EventDialogComponent} from './entities/event/event-dialog/event-dialog.component';
-import { ManagerService } from "./entities/projects/manager/manager.service";
-import { InternService } from "./entities/projects/intern/intern.service";
-import { TeamService } from "./entities/teams/team.service";
 import { UserService } from "./shared/user.service";
 
 @NgModule({
