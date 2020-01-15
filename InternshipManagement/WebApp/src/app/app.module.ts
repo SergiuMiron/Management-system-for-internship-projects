@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
@@ -20,7 +20,6 @@ import { NewTeamComponent } from './entities/teams/new-team/new-team.component';
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddInternComponent } from './entities/add-intern/add-intern.component';
 import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
-import { ProjectMembersComponent } from './entities/projects/project-members/project-members.component';
 import { TeamMembersComponent } from './entities/teams/team-members/team-members.component';
 
 import { AddManagerService } from './entities/add-manager/add-manager.service';
@@ -29,6 +28,15 @@ import { AddInternService } from './entities/add-intern/add-intern.service';
 import { TrainerService } from './entities/projects/trainer.service';
 import { ProjectService } from './entities/projects/project.service';
 import { AuthenticationService } from './entities/login/login/authentication.service';
+import { TeamService } from './entities/teams/team.service';
+import {ProjectMembersComponent} from './entities/projects/project-members/project-members.component';
+import {ManagerService} from './entities/projects/manager/manager.service';
+import {InternService} from './entities/projects/intern/intern.service';
+import {FeedbackComponent} from './entities/feedback/feedback.component';
+import {FeedbackService} from './entities/feedback/feedback.service';
+import {EventsComponent} from './entities/event/events.component';
+import {EventService} from './entities/event/event.service';
+import {EventDialogComponent} from './entities/event/event-dialog/event-dialog.component';
 import { ManagerService } from "./entities/projects/manager/manager.service";
 import { InternService } from "./entities/projects/intern/intern.service";
 import { TeamService } from "./entities/teams/team.service";
@@ -47,13 +55,19 @@ import { UserService } from "./shared/user.service";
     AddInternComponent,
     AddTrainerComponent,
     ProjectMembersComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    ProjectMembersComponent,
+    FeedbackComponent,
+    EventsComponent,
+    EventDialogComponent
   ],
   entryComponents: [
     NewProjectComponent,
     NewTeamComponent,
     ProjectMembersComponent,
-    TeamMembersComponent
+    TeamMembersComponent,
+    ProjectMembersComponent,
+    EventDialogComponent
   ],
   imports: [
     AngularMaterialModule,
@@ -69,6 +83,7 @@ import { UserService } from "./shared/user.service";
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    // { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     ProjectService,
     AuthenticationService,
     AddManagerService,
@@ -79,8 +94,12 @@ import { UserService } from "./shared/user.service";
     ManagerService,
     InternService,
     TeamService,
+    FeedbackService,
+    EventService,
+    TeamService,
     UserService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }
