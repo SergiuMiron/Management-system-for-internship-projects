@@ -54,5 +54,38 @@ namespace BusinessLogic.Read.Implementations.QueryBuilders
 
             return queryBuilder.BuildQuery();
         }
+
+        public string BuildGetByManagerIdQuery(Guid id)
+        {
+            var queryBuilder = new SelectQueryBuilder();
+
+            queryBuilder.SelectFromTable("Manager");
+            queryBuilder.AddWhere("Id", Comparison.Equals, id.ToString());
+            queryBuilder.BuildQuery();
+
+            return queryBuilder.BuildQuery();
+        }
+
+        public string BuildGetByTrainerIdQuery(Guid id)
+        {
+            var queryBuilder = new SelectQueryBuilder();
+
+            queryBuilder.SelectFromTable("Trainer");
+            queryBuilder.AddWhere("Id", Comparison.Equals, id.ToString());
+            queryBuilder.BuildQuery();
+
+            return queryBuilder.BuildQuery();
+        }
+
+        public string BuildGetByInternIdQuery(Guid id)
+        {
+            var queryBuilder = new SelectQueryBuilder();
+
+            queryBuilder.SelectFromTable("Intern");
+            queryBuilder.AddWhere("Id", Comparison.Equals, id.ToString());
+            queryBuilder.BuildQuery();
+
+            return queryBuilder.BuildQuery();
+        }
     }
 }

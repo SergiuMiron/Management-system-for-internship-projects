@@ -79,5 +79,23 @@ namespace BusinessLogic.Read.Implementations.Logics
 
             return user;
         }
+
+        public ManagerDto GetManagerById(Guid id)
+        {
+            var query = _queryBuilder.BuildGetByManagerIdQuery(id);
+            return _repository.ExecuteQueryFirstOrDefault<ManagerDto>(query);
+        }
+
+        public TrainerDto GetTrainerById(Guid id)
+        {
+            var query = _queryBuilder.BuildGetByTrainerIdQuery(id);
+            return _repository.ExecuteQueryFirstOrDefault<TrainerDto>(query);
+        }
+
+        public InternDto GetInternById(Guid id)
+        {
+            var query = _queryBuilder.BuildGetByInternIdQuery(id);
+            return _repository.ExecuteQueryFirstOrDefault<InternDto>(query);
+        }
     }
 }

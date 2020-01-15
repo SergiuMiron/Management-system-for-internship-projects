@@ -12,5 +12,11 @@ namespace BusinessLogic.Read.Abstractions.Logics
         UserDto GetByUsernameAndPassword(string username, string password);
 
         UserDto Authenticate(string username, string password);
+
+        ManagerDto GetManagerById(Guid id);
+
+        TrainerDto GetTrainerById(Guid id);
+
+        InternDto GetInternById(Guid id);
     }
 }

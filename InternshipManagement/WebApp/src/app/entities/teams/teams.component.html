@@ -1,5 +1,5 @@
 <div class="table-container">
-  <button mat-raised-button color="accent" class="add-team-button" (click)="openTeamDialog()">
+  <button *ngIf="loggedUser == 'isTrainer'" mat-raised-button color="accent" class="add-team-button" (click)="openTeamDialog()">
     <mat-icon> add </mat-icon>
     Add Team
   </button>
@@ -26,11 +26,11 @@
         <div class="icons-container">
           <mat-icon [matMenuTriggerFor]="menu">settings</mat-icon>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="openTeamDialog(element)" style="outline: none;">
+            <button *ngIf="loggedUser == 'isTrainer'" mat-menu-item (click)="openTeamDialog(element)" style="outline: none;">
               <mat-icon>edit</mat-icon>
               <span>Edit</span>
             </button>
-            <button mat-menu-item (click)="deleteTeam(element)" style="outline: none;">
+            <button *ngIf="loggedUser == 'isTrainer'" mat-menu-item (click)="deleteTeam(element)" style="outline: none;">
               <mat-icon>restore_from_trash</mat-icon>
               <span>Delete</span>
             </button>

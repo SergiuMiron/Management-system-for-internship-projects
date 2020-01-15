@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
 
   // currentUser: string = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).username : null;
   // isLogged: boolean = localStorage.getItem('currentUser') ? true : false;
+  loggedUser: string;
 
   constructor(public authenticationService: AuthenticationService,
               public dialog: MatDialog,
@@ -25,6 +26,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     console.log('onInit: ', this.authenticationService.authenticated);
+    this.loggedUser = localStorage.getItem('loggedUser');
   }
 
   clearUsername() {

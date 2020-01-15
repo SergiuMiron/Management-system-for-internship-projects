@@ -4,6 +4,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 import { AuthenticationService } from './authentication.service';
 
+import { UserService } from '../../../shared/user.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -16,10 +18,13 @@ export class LoginComponent implements OnInit {
     returnUrl: string;
     error = '';
 
+    loggedUserId: string = null;
+
     constructor(
         private formBuilder: FormBuilder,
         private route: ActivatedRoute,
         private router: Router,
+        private userService: UserService,
         private authenticationService: AuthenticationService) {}
 
     ngOnInit() {
@@ -53,6 +58,27 @@ export class LoginComponent implements OnInit {
                 data => {
                     this.router.navigate([this.returnUrl]);
                     this.authenticationService.authenticate();
+
+                    this.loggedUserId = JSON.parse(localStorage.getItem('currentUser')).id;
+                    console.log("loggeduser: ", this.loggedUserId);
+
+                    this.userService.getManagerById(this.loggedUserId).subscribe(manager => {
+                        if (!manager) {
+                          this.userService.getTrainerById(this.loggedUserId).subscribe(trainer => {
+                            if (!trainer) {
+                              this.userService.getInternById(this.loggedUserId).subscribe(intern => {
+                                localStorage.setItem('loggedUser', "isIntern");
+                              });
+                            }
+                            else {
+                                localStorage.setItem('loggedUser', "isTrainer");
+                            }
+                          });
+                        }
+                        else {
+                            localStorage.setItem('loggedUser', "isManager");
+                        }
+                      });
 
                 },
                 error => {

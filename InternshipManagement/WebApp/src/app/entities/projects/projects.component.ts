@@ -23,6 +23,7 @@ export class ProjectsComponent implements OnInit {
   project: ProjectModel = new ProjectModel();
   dataSource: MatTableDataSource<ProjectModel>;
   displayedColumns: string[] = ['name', 'startDate', 'endDate', 'technologyStack', 'action'];
+  loggedUser: string;
   // addNewProjectDialog: MatDialogRef<NewProjectComponent>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
@@ -34,6 +35,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.initProjects();
+    this.loggedUser = localStorage.getItem('loggedUser');
   }
 
   initProjects() {

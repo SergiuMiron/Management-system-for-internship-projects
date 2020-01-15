@@ -13,5 +13,11 @@ namespace BusinessLogic.Read.Abstractions.QueryBuilders
         string BuildGetByUsernameAndPasswordQueryTrainer(string username, string password);
 
         string BuildGetByUsernameAndPasswordQueryIntern(string username, string password);
+
+        string BuildGetByManagerIdQuery(Guid id);
+
+        string BuildGetByTrainerIdQuery(Guid id);
+
+        string BuildGetByInternIdQuery(Guid id);
     }
 }

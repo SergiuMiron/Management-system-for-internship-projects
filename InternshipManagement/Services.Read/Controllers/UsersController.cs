@@ -38,5 +38,23 @@ namespace Services.Read.Controllers
 
             return Ok(user);
         }
+
+        [HttpGet("manager/{id}")]
+        public ManagerDto GetManagerById([FromRoute] Guid id)
+        {
+            return _userLogic.GetManagerById(id);
+        }
+
+        [HttpGet("trainer/{id}")]
+        public TrainerDto GetTrainerById([FromRoute] Guid id)
+        {
+            return _userLogic.GetTrainerById(id);
+        }
+
+        [HttpGet("intern/{id}")]
+        public InternDto GetInternById([FromRoute] Guid id)
+        {
+            return _userLogic.GetInternById(id);
+        }
     }
 }

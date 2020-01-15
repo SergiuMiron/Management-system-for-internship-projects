@@ -25,6 +25,7 @@ export class TeamsComponent implements OnInit {
   team: TeamModel = new TeamModel();
   dataSource: MatTableDataSource<TeamModel>;
   displayedColumns: string[] = ['name', 'description', 'action'];
+  loggedUser: string;
   // addNewProjectDialog: MatDialogRef<NewProjectComponent>;
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
@@ -36,6 +37,7 @@ export class TeamsComponent implements OnInit {
 
   ngOnInit() {
     this.initTeams();
+    this.loggedUser = localStorage.getItem('loggedUser');
   }
 
   initTeams() {

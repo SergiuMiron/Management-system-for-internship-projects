@@ -32,6 +32,7 @@ import { AuthenticationService } from './entities/login/login/authentication.ser
 import { ManagerService } from "./entities/projects/manager/manager.service";
 import { InternService } from "./entities/projects/intern/intern.service";
 import { TeamService } from "./entities/teams/team.service";
+import { UserService } from "./shared/user.service";
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { TeamService } from "./entities/teams/team.service";
     AuthenticationService,
     ManagerService,
     InternService,
-    TeamService
+    TeamService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
