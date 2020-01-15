@@ -33,5 +33,25 @@ namespace BusinessLogic.Write.Implementations
                 _repository.Save();
             }
         }
+
+        public void UpdateTrainersTeam(string teamId, List<TrainerDto> trainers)
+        {
+            foreach (TrainerDto trainer in trainers)
+            {
+                Guid Id = new Guid(trainer.Id);
+                Trainer trainerToUpdate = _repository.GetByFilter<Trainer>(p => p.Id == Id);
+                Guid tId = new Guid(teamId);
+                Team getTeam = _repository.GetByFilter<Team>(p => p.Id == tId);
+                if (trainerToUpdate == null)
+                {
+                    return;
+                }
+                trainerToUpdate.IdTeam = teamId;
+                trainerToUpdate.IdProject = getTeam.IdProject;
+
+                _repository.Update(trainerToUpdate);
+                _repository.Save();
+            }
+        }
     }
 }

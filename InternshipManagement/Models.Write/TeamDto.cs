@@ -11,5 +11,7 @@ namespace Models.Write
         public string Description { get; set; }
 
         public string IdProject { get; set; }
+
+        public string IdTrainerCreator { get; set; }
     }
 }

@@ -20,10 +20,17 @@ namespace Services.Write.Controllers
             _trainerLogic = trainerLogic;
         }
 
-        [HttpPut("update-trainers/{id}")]
+        [HttpPut("update-trainers/project/{id}")]
         public IActionResult UpdateTrainersProject([FromRoute] string id, [FromBody] List<TrainerDto> trainers)
         {
             _trainerLogic.UpdateTrainersProject(id, trainers);
+            return NoContent();
+        }
+
+        [HttpPut("update-trainers/team/{id}")]
+        public IActionResult UpdateTrainersTeam([FromRoute] string id, [FromBody] List<TrainerDto> trainers)
+        {
+            _trainerLogic.UpdateTrainersTeam(id, trainers);
             return NoContent();
         }
     }

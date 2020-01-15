@@ -30,5 +30,11 @@ namespace BusinessLogic.Read.Implementations.Logics
             var query = _queryBuilder.BuildGetByProjectIdQuery(id);
             return _repository.ExecuteQuery<InternDto>(query);
         }
+
+        public IEnumerable<InternDto> GetAllByTeamId(Guid id)
+        {
+            var query = _queryBuilder.BuildGetByTeamIdQuery(id);
+            return _repository.ExecuteQuery<InternDto>(query);
+        }
     }
 }

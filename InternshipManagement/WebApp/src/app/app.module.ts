@@ -16,10 +16,12 @@ import { HeaderComponent } from './header/header.component';
 import { TeamsComponent } from './entities/teams/teams.component';
 import { ProjectsComponent } from './entities/projects/projects.component';
 import { NewProjectComponent } from './entities/projects/project-new/new-project.component';
+import { NewTeamComponent } from './entities/teams/new-team/new-team.component';
 import { AddManagerComponent } from './entities/add-manager/add-manager.component';
 import { AddInternComponent } from './entities/add-intern/add-intern.component';
 import { AddTrainerComponent } from './entities/add-trainer/add-trainer.component';
 import { ProjectMembersComponent } from './entities/projects/project-members/project-members.component';
+import { TeamMembersComponent } from './entities/teams/team-members/team-members.component';
 
 import { AddManagerService } from './entities/add-manager/add-manager.service';
 import { AddTrainerService } from './entities/add-trainer/add-trainer.service';
@@ -39,14 +41,18 @@ import { TeamService } from "./entities/teams/team.service";
     ProjectsComponent,
     LoginComponent,
     NewProjectComponent,
+    NewTeamComponent,
     AddManagerComponent,
     AddInternComponent,
     AddTrainerComponent,
-    ProjectMembersComponent
+    ProjectMembersComponent,
+    TeamMembersComponent
   ],
   entryComponents: [
     NewProjectComponent,
-    ProjectMembersComponent
+    NewTeamComponent,
+    ProjectMembersComponent,
+    TeamMembersComponent
   ],
   imports: [
     AngularMaterialModule,

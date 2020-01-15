@@ -12,6 +12,8 @@ import {
 // import {ConfirmationDialogComponent} from '../../shared/confirmation-dialog/confirmation-dialog.component';
 // import {ProjectMembersComponent} from "./project-members/project-members.component";
 import {ConfirmationDialogComponent} from '../../shared/confirmation-dialog/confirmation-dialog.component';
+import { NewTeamComponent } from './new-team/new-team.component';
+import { TeamMembersComponent } from './team-members/team-members.component';
 
 @Component({
   selector: 'app-teams',
@@ -53,50 +55,50 @@ export class TeamsComponent implements OnInit {
     }
   }
 
-  // openProjectDialog(team?: TeamModel) {
-  //   let dialogConfig = new MatDialogConfig();
+  openTeamDialog(team?: TeamModel) {
+    let dialogConfig = new MatDialogConfig();
 
-  //   dialogConfig = {
-  //     width: '40%',
-  //     disableClose: true,
-  //     autoFocus: false,
-  //     data: team
-  //   };
-  //   const dialogRef = this.dialog.open(NewProjectComponent, dialogConfig);
+    dialogConfig = {
+      width: '40%',
+      disableClose: true,
+      autoFocus: false,
+      data: team
+    };
+    const dialogRef = this.dialog.open(NewTeamComponent, dialogConfig);
 
-  //   dialogRef.afterClosed().subscribe(() => {
-  //     this.initProjects();
-  //   });
-  // }
+    dialogRef.afterClosed().subscribe(() => {
+      this.initTeams();
+    });
+  }
 
-  // deleteProject(team: TeamModel) {
-  //   let dialogConfig = new MatDialogConfig();
-  //   dialogConfig = {
-  //     disableClose: true,
-  //     autoFocus: false,
-  //     data: 'Are you sure you want to delete this team?'
-  //   };
-  //   const dialogRef = this.dialog.open(ConfirmationDialogComponent, dialogConfig);
+  deleteTeam(team: TeamModel) {
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      disableClose: true,
+      autoFocus: false,
+      data: 'Are you sure you want to delete this team?'
+    };
+    const dialogRef = this.dialog.open(ConfirmationDialogComponent, dialogConfig);
 
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     if (result) {
-  //       this.teamService.delete(team.id).subscribe(res => {
-  //         this.snackBar.open('Team successfully deleted', 'Dismiss', {duration: 3000});
-  //         this.initTeams();
-  //       });
-  //     }
-  //   });
-  // }
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        this.teamService.delete(team.id).subscribe(res => {
+          this.snackBar.open('Team successfully deleted', 'Dismiss', {duration: 3000});
+          this.initTeams();
+        });
+      }
+    });
+  }
 
-  // openMembersDialog(project: ProjectModel) {
-  //   let dialogConfig = new MatDialogConfig();
-  //   dialogConfig = {
-  //     width: '50%',
-  //     disableClose: true,
-  //     autoFocus: false,
-  //     data: project
-  //   };
-  //   const dialogRef = this.dialog.open(ProjectMembersComponent, dialogConfig);
-  // }
+  openMembersDialog(team: TeamModel) {
+    let dialogConfig = new MatDialogConfig();
+    dialogConfig = {
+      width: '50%',
+      disableClose: true,
+      autoFocus: false,
+      data: team
+    };
+    const dialogRef = this.dialog.open(TeamMembersComponent, dialogConfig);
+  }
 
 }

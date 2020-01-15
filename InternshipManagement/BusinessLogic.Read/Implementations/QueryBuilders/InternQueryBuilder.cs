@@ -29,5 +29,16 @@ namespace BusinessLogic.Read.Implementations.QueryBuilders
 
             return queryBuilder.BuildQuery();
         }
+
+        public string BuildGetByTeamIdQuery(Guid id)
+        {
+            var queryBuilder = new SelectQueryBuilder();
+
+            queryBuilder.SelectFromTable("Intern");
+            queryBuilder.AddWhere("IdTeam", Comparison.Equals, id.ToString());
+            queryBuilder.BuildQuery();
+
+            return queryBuilder.BuildQuery();
+        }
     }
 }

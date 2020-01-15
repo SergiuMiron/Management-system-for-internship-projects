@@ -8,5 +8,7 @@ namespace BusinessLogic.Write.Abstractions
     public interface ITrainerLogic
     {
         void UpdateTrainersProject(string projectId, List<TrainerDto> trainersId);
+
+        void UpdateTrainersTeam(string teamId, List<TrainerDto> trainersId);
     }
 }
