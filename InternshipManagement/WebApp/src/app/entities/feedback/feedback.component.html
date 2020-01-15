@@ -1,0 +1,30 @@
+<div class="form-container">
+  <h2 mat-dialog-title>Provide Feedback</h2>
+
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+      <mat-select [(ngModel)]="feedback.idIntern" formControlName="intern" placeholder="Select the intern you want to provide feedback for">
+        <mat-option *ngFor="let intern of interns" [value]="intern.id">
+          {{intern.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="number" placeholder="Select a rating" [(ngModel)]="feedback.rating"
+            formControlName="rating">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Insert the rating text" [(ngModel)]="feedback.description"
+             formControlName="description">
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Close</button>
+    <button mat-raised-button color="accent"
+            [disabled]="!form.valid"
+            (click)="save()">Save</button>
+  </mat-dialog-actions>
+</div>

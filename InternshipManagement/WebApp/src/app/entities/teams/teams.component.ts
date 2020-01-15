@@ -2,8 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { TeamModel } from './team.model';
 import { TeamService} from './team.service';
 import {
-  MatDialog,
-  MatDialogConfig,
+  MatDialog, MatDialogConfig,
   MatPaginator,
   MatSnackBar,
   MatSort,
@@ -40,7 +39,7 @@ export class TeamsComponent implements OnInit {
 
   initTeams() {
     this.teamService.getAll().subscribe(res => {
-      console.log(res)
+      console.log(res);
       this.dataSource = new MatTableDataSource(res);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;

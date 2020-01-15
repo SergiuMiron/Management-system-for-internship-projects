@@ -8,6 +8,8 @@ import { AddTrainerComponent } from './entities/add-trainer/add-trainer.componen
 import { AddInternComponent } from './entities/add-intern/add-intern.component';
 
 import { AuthGuard } from './guards';
+import {FeedbackComponent} from './entities/feedback/feedback.component';
+import {EventsComponent} from './entities/event/events.component';
 
 const appRoutes: Routes = [
   {
@@ -18,6 +20,12 @@ const appRoutes: Routes = [
   },
   {
     path: 'teams', component: TeamsComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'schedule', component: EventsComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'feedback', component: FeedbackComponent, canActivate: [AuthGuard]
   },
   {
     path: 'login', component: LoginComponent

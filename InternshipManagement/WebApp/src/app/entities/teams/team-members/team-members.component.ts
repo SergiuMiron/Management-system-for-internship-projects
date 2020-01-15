@@ -25,9 +25,9 @@ export class TeamMembersComponent implements OnInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   constructor(private trainerService: TrainerService,
-    private internService: InternService,
-    private dialogRef: MatDialogRef<TeamMembersComponent>,
-    @Inject(MAT_DIALOG_DATA) data, ) {
+              private internService: InternService,
+              private dialogRef: MatDialogRef<TeamMembersComponent>,
+              @Inject(MAT_DIALOG_DATA) data, ) {
     this.team = data;
   }
 

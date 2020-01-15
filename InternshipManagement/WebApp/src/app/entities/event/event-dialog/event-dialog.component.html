@@ -1,0 +1,41 @@
+<div class="form-container">
+  <h2 mat-dialog-title>{{event.id? 'Edit Event': 'Add new event'}}</h2>
+
+  <mat-dialog-content [formGroup]="form">
+    <mat-form-field>
+      <input matInput formControlName="title" id="title" name="title"
+             placeholder="Enter event title" [(ngModel)]="event.title">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="description" id="description"
+             name="description" placeholder="Insert a description"
+             [(ngModel)]="event.description">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="startDate" [matDatepicker]="startDate" id="startDate" name="startDate"
+             placeholder="Start date of the event" [(ngModel)]="event.startDate">
+      <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+      <mat-datepicker #startDate></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="endDate" [matDatepicker]="endDate" id="endDate" name="endDate"
+             placeholder="End date of the project" [(ngModel)]="event.endDate">
+      <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+      <mat-datepicker #endDate></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="department" id="department"
+             name="technologyStack" placeholder="Choose a department"
+             [(ngModel)]="event.department">
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Close</button>
+    <button mat-raised-button color="primary" [disabled]="!form.valid" (click)="save()">Save</button>
+  </mat-dialog-actions>
+</div>

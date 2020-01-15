@@ -11,7 +11,7 @@ import {
 } from '@angular/material';
 import {NewProjectComponent} from './project-new/new-project.component';
 import {ConfirmationDialogComponent} from '../../shared/confirmation-dialog/confirmation-dialog.component';
-import {ProjectMembersComponent} from "./project-members/project-members.component";
+import {ProjectMembersComponent} from './project-members/project-members.component';
 
 @Component({
   selector: 'app-projects',

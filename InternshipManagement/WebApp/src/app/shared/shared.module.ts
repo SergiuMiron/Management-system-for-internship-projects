@@ -1,19 +1,29 @@
-import {NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {ConfirmationDialogComponent} from './confirmation-dialog/confirmation-dialog.component';
 import {AngularMaterialModule} from '../angular-material.module';
+import {LoaderComponent} from './loader/loader.component';
+import {LoaderService} from './loader/loader.service';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   imports: [
-    AngularMaterialModule
+    AngularMaterialModule,
+    CommonModule
   ],
   declarations: [
-    ConfirmationDialogComponent
+    ConfirmationDialogComponent,
+    LoaderComponent
   ],
   providers: [
+    LoaderService
   ],
   entryComponents: [
     ConfirmationDialogComponent
   ],
-  exports: []
+  exports: [
+    ConfirmationDialogComponent,
+    LoaderComponent
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class SharedModule {}
